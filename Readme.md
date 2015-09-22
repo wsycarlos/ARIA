@@ -1,4 +1,4 @@
-欢迎来到ARIA项目
+Welcome to Aria Project
 我希望这是一个边做边学的项目
 所以第一重要的是尝试新技术
 第二重要的是用好新技术
@@ -22,3 +22,6 @@ LaTeX 教程：这个既有也没有 因为满大街都是 但是几乎都没什
 暂时就这样 Have Fun！
 
 PS：记得所有文件 UTF8-无BOM格式编码 否则。。你会发现他不可读
+
+Developer:
+	MonkeyKingMKY
