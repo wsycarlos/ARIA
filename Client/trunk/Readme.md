@@ -1,3 +1,3 @@
-#Welcome to Project Aria
+#Welcome to Project ARIA
 
 ##Unity Project Folder

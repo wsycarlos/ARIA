@@ -1,4 +1,4 @@
-#Welcome to Project Aria
+#Welcome to Project ARIA
 
 ##I Hope This One to be a Learn&Do Project
 1. Try New Tech
@@ -14,11 +14,11 @@ Front-End：Unity+ (undetermined)<br/>
 Back-End：C#/PHP<br/>
 Database：(undetermined)（TBD)<br/>  
 
->Then,have Fun！
+>Then, have Fun！
 
 ##Notes
 >Use UTF-8 with no BOM format<br/> 
->Otherwise。。<br/>
+>Otherwise..<br/>
 >You will find it unreadable<br/>
 
 ##Developer(Alphabet Seq):
@@ -31,6 +31,6 @@ Wsycarlos<br/>
 ###Latex  
 * [LaTeX Download Link](http://www.ctex.org/CTeXDownload)<br/>
 * [LaTeX Wiki CHINA](https://zh.wikipedia.org/wiki/LaTeX)<br/>
+* LaTeX tutorial: 这个既有也没有 因为满大街都是 但是几乎都没什么囊括的。。边用边学才是王道<br/>
 
-####LaTeX tutorial: 
-这个既有也没有 因为满大街都是 但是几乎都没什么囊括的。。边用边学才是王道    
+##
