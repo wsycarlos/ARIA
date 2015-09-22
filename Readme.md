@@ -1,26 +1,25 @@
+#Welcome to Project Aria
 
-#Welcome to Aria Project
+##I Hope This One to be a Learn&Do Project
+1. Try New Tech
+2. Make a Good use of them
+3. Not necessarily Intersting But High
 
-##我希望这是一个边做边学的项目
-1. 尝试新技术
-2. 用好新技术
-3. 做的东西不一定要好玩 但一定要有技术含量  
+###So
+* Repository：Github（上不了什么的翻墙应该不是什么难点吧）  
+* Document：LaTeX（Use it, Many People are using it)
 
-##所以目前
-代码管理：Github（上不了什么的翻墙应该不是什么难点吧）  
-文档书写：LaTeX（我希望大家学一下 我也是来了加拿大才知道很多很多人都用它）  
+##Using Tech&Tool
+Front-End：Unity+ (undetermined)<br/>
+Back-End：C#/PHP<br/>
+Database：(undetermined)（TBD)<br/>  
 
-##使用技术
-前端：Unity+待定  
-后端：C#/PHP  
-数据库：待定（TBD）  
+>Then,have Fun！
 
->暂时就这样 Have Fun！
-
-##注意事项
->记得所有文件 UTF8-无BOM格式编码<br/> 
->否则。。
->你会发现他不可读<br/>
+##Notes
+>Use UTF-8 with no BOM format<br/> 
+>Otherwise。。<br/>
+>You will find it unreadable<br/>
 
 ##Developer(Alphabet Seq):
 ALAN<br/>
@@ -30,7 +29,7 @@ Wsycarlos<br/>
 
 ##Tool
 ###Latex  
-[LaTeX 下载连接](http://www.ctex.org/CTeXDownload)<br/>
-[LaTeX 简介地址](https://zh.wikipedia.org/wiki/LaTeX)<br/>
-####LaTeX 教程 : 
+* [LaTeX Download Link](http://www.ctex.org/CTeXDownload)<br/>
+* [LaTeX Wiki CHINA](https://zh.wikipedia.org/wiki/LaTeX)<br/>
+####LaTeX tutorial: 
 这个既有也没有 因为满大街都是 但是几乎都没什么囊括的。。边用边学才是王道    

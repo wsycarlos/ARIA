@@ -1,3 +1,3 @@
-欢迎来到ARIA项目
+#Welcome to Project Aria
 
-这是Unity项目文件夹
+##Unity Project Folder
