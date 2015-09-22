@@ -11,9 +11,9 @@ Welcome to Project ARIA
 - Document：LaTeX（Use it, Many People are using it)
 
 ##Using Tech&Tool
-+ Front-End：Unity+ (undetermined)<br/>
-+ Back-End：C#/PHP<br/>
-+ Database：(undetermined)（TBD)<br/>  
++ Front-End：Unity+ (undetermined)
++ Back-End：C#/PHP
++ Database：(undetermined)（TBD)  
 
 >Then, have Fun！
 
@@ -23,27 +23,32 @@ Otherwise..<br/>
 You will find it unreadable<br/>
 
 ##Developer (Alphabet Seq):
-	ALAN
-	HanXusheng
-	MonkeyKingMKY
-	Wsycarlos
+```text
+ALAN
+HanXusheng
+MonkeyKingMKY
+Wsycarlos
+```
 
 ##Tools
 ###Latex  
-* [LaTeX Download Link](http://www.ctex.org/CTeXDownload "www.ctex.org/CTeXDownload")<br/>
-* [LaTeX Wiki CHINA](https://zh.wikipedia.org/wiki/LaTeX "zh.wikipedia.org/wiki/LaTeX")<br/>
-* LaTeX Tutorial: 这个既有也没有 因为满大街都是 但是几乎都没什么囊括的。 边用边学才是王道<br/>
+* [LaTeX Download Link](http://www.ctex.org/CTeXDownload "www.ctex.org/CTeXDownload")
+* [LaTeX Wiki CHINA](https://zh.wikipedia.org/wiki/LaTeX "zh.wikipedia.org/wiki/LaTeX")
+* LaTeX Tutorial: 这个既有也没有 因为满大街都是 但是几乎都没什么囊括的。 边用边学才是王道
 
 ###About Markdown
 - Triple/Single backquotes is supported
 - But single backquote can't keep the line structure while triple backquote can do it.
 
-####Triple Backquote Example
+**Triple Backquote Example**
+
 ```text
 test test test
 test test test
 ```
-####Single Backquote Example
+
+**Single Backquote Example**
+
 `
 test test test
 test test test
