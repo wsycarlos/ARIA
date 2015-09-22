@@ -31,5 +31,6 @@ Wsycarlos<br/>
 ###Latex  
 * [LaTeX Download Link](http://www.ctex.org/CTeXDownload)<br/>
 * [LaTeX Wiki CHINA](https://zh.wikipedia.org/wiki/LaTeX)<br/>
-###LaTeX tutorial: 
+
+####LaTeX tutorial: 
 这个既有也没有 因为满大街都是 但是几乎都没什么囊括的。。边用边学才是王道    
