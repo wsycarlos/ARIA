@@ -42,3 +42,6 @@ Network Trash Folder
 Temporary Items
 .apdisk
 /test.md
+*.aux
+*.log
+*.gz
