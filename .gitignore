@@ -45,3 +45,5 @@ Temporary Items
 *.aux
 *.log
 *.gz
+*.csproj
+*.cache

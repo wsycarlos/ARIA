@@ -61,6 +61,9 @@
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
       <HintPath>Library\UnityAssemblies\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
     </Reference>
+    <Reference Include="WebSocket4Net">
+      <HintPath>Assets\Plugin\WebSocket4Net.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Excelreader\DataModel\ExcelCellBindingAttribute.cs" />
@@ -205,6 +208,7 @@
     <Compile Include="Assets\NGUI\Scripts\UI\UITexture.cs" />
     <Compile Include="Assets\NGUI\Scripts\UI\UITooltip.cs" />
     <Compile Include="Assets\NGUI\Scripts\UI\UIViewport.cs" />
+    <Compile Include="Assets\NetTest.cs" />
     <Compile Include="Assets\UGUI\Scripts\Interal\EventTriggerListener.cs" />
     <Compile Include="Assets\UGUI\Scripts\Interal\UITools.cs" />
     <Compile Include="Assets\UGUI\Scripts\Interation\DrawRenderTexture.cs" />
