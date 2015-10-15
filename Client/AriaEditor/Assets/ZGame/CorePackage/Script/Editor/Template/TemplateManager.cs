@@ -71,7 +71,7 @@ namespace Game.Template.Editor
                     //read and write class
                     CodeGenerator(def.dataType, def.dataName);
                     //data dictionary class
-                    CodeGenerator(def.dataName, def.dataType, def.dataType, typeof(Dictionary<int, def.dataType>));
+                    CodeGenerator(def.dataName, def.DataLTypeistType, def.dataType, def.dataDicType);
                 };
             }
             ////CodeGenerator("LocalizationData", typeof(List<LanguageVO>), typeof(LanguageVO), typeof(Dictionary<int, LanguageVO>));

@@ -292,36 +292,13 @@
     <Compile Include="Assets\ZGame\CorePackage\Script\Editor\Template\ITemplaterWriter.cs" />
     <Compile Include="Assets\ZGame\CorePackage\Script\Editor\Template\TemplateCodeGenerator.cs" />
     <Compile Include="Assets\ZGame\CorePackage\Script\Editor\Template\TemplateManager.cs" />
-    <Compile Include="Assets\ZGame\CorePackage\Script\Editor\Template\Writer\ActorTemplateVODataWriter.cs" />
-    <Compile Include="Assets\ZGame\CorePackage\Script\Editor\Template\Writer\BattleLogTemplateVODataWriter.cs" />
-    <Compile Include="Assets\ZGame\CorePackage\Script\Editor\Template\Writer\BornTemplateVODataWriter.cs" />
     <Compile Include="Assets\ZGame\CorePackage\Script\Editor\Template\Writer\BuildingLevelTemplateVODataWriter.cs" />
     <Compile Include="Assets\ZGame\CorePackage\Script\Editor\Template\Writer\BuildingProductTemplateVODataWriter.cs" />
     <Compile Include="Assets\ZGame\CorePackage\Script\Editor\Template\Writer\BuildingSettingTemplateVODataWriter.cs" />
     <Compile Include="Assets\ZGame\CorePackage\Script\Editor\Template\Writer\BuildingSpecialTemplateVODataWriter.cs" />
     <Compile Include="Assets\ZGame\CorePackage\Script\Editor\Template\Writer\BuildingTemplateVODataWriter.cs" />
-    <Compile Include="Assets\ZGame\CorePackage\Script\Editor\Template\Writer\ChargeTemplateVODataWriter.cs" />
-    <Compile Include="Assets\ZGame\CorePackage\Script\Editor\Template\Writer\ClubTipsTemplateVODataWriter.cs" />
     <Compile Include="Assets\ZGame\CorePackage\Script\Editor\Template\Writer\ConstantTemplateVODataWriter.cs" />
-    <Compile Include="Assets\ZGame\CorePackage\Script\Editor\Template\Writer\EquipSuitTemplateVODataWriter.cs" />
-    <Compile Include="Assets\ZGame\CorePackage\Script\Editor\Template\Writer\EquipTemplateVODataWriter.cs" />
-    <Compile Include="Assets\ZGame\CorePackage\Script\Editor\Template\Writer\FinishCdTimeTemplateVODataWriter.cs" />
-    <Compile Include="Assets\ZGame\CorePackage\Script\Editor\Template\Writer\GuideTemplateVODataWriter.cs" />
-    <Compile Include="Assets\ZGame\CorePackage\Script\Editor\Template\Writer\HeroTemplateVODataWriter.cs" />
     <Compile Include="Assets\ZGame\CorePackage\Script\Editor\Template\Writer\HumanTemplateVODataWriter.cs" />
-    <Compile Include="Assets\ZGame\CorePackage\Script\Editor\Template\Writer\MapBlackMarketTemplateVODataWriter.cs" />
-    <Compile Include="Assets\ZGame\CorePackage\Script\Editor\Template\Writer\MapCampTemplateVODataWriter.cs" />
-    <Compile Include="Assets\ZGame\CorePackage\Script\Editor\Template\Writer\MapDragonTemplateVODataWriter.cs" />
-    <Compile Include="Assets\ZGame\CorePackage\Script\Editor\Template\Writer\MapMineTemplateVODataWriter.cs" />
-    <Compile Include="Assets\ZGame\CorePackage\Script\Editor\Template\Writer\MapMonsterTemplateVODataWriter.cs" />
-    <Compile Include="Assets\ZGame\CorePackage\Script\Editor\Template\Writer\MapSettingTemplateVODataWriter.cs" />
-    <Compile Include="Assets\ZGame\CorePackage\Script\Editor\Template\Writer\MapTemplateVODataWriter.cs" />
-    <Compile Include="Assets\ZGame\CorePackage\Script\Editor\Template\Writer\MarketTemplateVODataWriter.cs" />
-    <Compile Include="Assets\ZGame\CorePackage\Script\Editor\Template\Writer\OfficerTemplateVODataWriter.cs" />
-    <Compile Include="Assets\ZGame\CorePackage\Script\Editor\Template\Writer\SocietyActionTemplateVODataWriter.cs" />
-    <Compile Include="Assets\ZGame\CorePackage\Script\Editor\Template\Writer\SocietyLevelTemplateVODataWriter.cs" />
-    <Compile Include="Assets\ZGame\CorePackage\Script\Editor\Template\Writer\SocietyLivenessTemplateVODataWriter.cs" />
-    <Compile Include="Assets\ZGame\CorePackage\Script\Editor\Template\Writer\TalentTemplateVODataWriter.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\BundleManager\BMConfiger.txt" />

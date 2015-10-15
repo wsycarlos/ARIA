@@ -14,13 +14,17 @@ public class TemplateDefAttribute : System.Attribute
     public string dataName;
     public Type dataType;
     public Type dicType;
+    public Type DataLTypeistType;
+    public Type dataDicType;
 
-    public TemplateDefAttribute(string xlsPath, int xlsIndex, string dataName, Type dataType, Type dicType = null)
+    public TemplateDefAttribute(string xlsPath, int xlsIndex, string dataName, Type dataType, Type listType, Type dataDicType, Type dicType = null)
     {
         this.path = xlsPath;
         this.index = xlsIndex;
         this.dataName = dataName;
         this.dataType = dataType;
         this.dicType = dicType;
+        this.DataLTypeistType = listType;
+        this.dataDicType = dataDicType;
     }
 }
