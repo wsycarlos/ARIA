@@ -1,0 +1,17 @@
+翻译维护
+1 提交翻译源
+  a 【执行run.bat】导出策划表到svn://shared/out目录下
+  b 【文件拷贝】将最新的sys_lang.xls拷贝到svn://shared/i18n/zh_CN目录下
+  c 【执行export.bat】生成翻译文件
+  d 【文件操作】将svn://shared/i18n/en目录下所有的lang_XXX.xls文件打包，提交翻译
+
+2 翻译源完成翻译后，将翻译内容导入数据库
+  a 【文件操作】将翻译好的文件解包，覆盖svn://shared/i18n/en目录下的文件
+  b 【执行update.bat】将翻译内容导入数据库
+
+
+
+发版前导表
+  a 【执行run.bat】导出策划表到svn://shared/out目录下
+  b 【执行exportAndReplace.bat】使用数据库中的翻译内容填充覆盖所有需要的xls中的中文内容
+  c 【执行formatDatalang.bat】使用翻译后的data_lang格式化所有xls中的数据文本

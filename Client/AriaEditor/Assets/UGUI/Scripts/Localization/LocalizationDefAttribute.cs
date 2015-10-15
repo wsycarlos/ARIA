@@ -36,11 +36,5 @@ namespace Game
         LocalizationDictionaryZHCN,
         [LocalizationDef("Localization", 0, "LocalizationData", "en", 2)]
         LocalizationDictionaryENUS,
-        [LocalizationDef("Localization_so", 0, "LocalizationSO", "cn", 1)]
-        LocalizationDictionaryZHCN_SO,
-        [LocalizationDef("Localization_so", 0, "LocalizationSO", "en", 2)]
-        LocalizationDictionaryENUS_SO,
-        //[LocalizationDef("Localization", 0, "LocalizationData", "Japanese", 3)]
-        //LocalizationDictionaryJAPA,
     }
 }

@@ -1,0 +1,70 @@
+[
+    
+    {
+        "name" : "ui",        
+        "includs" : 
+        [
+            "Assets/Art/Export/Prefab/UI"
+        ],        
+        "dependAssets" : 
+        [
+            "Assets/Art/Export/Sprites/Bg_neikuang_1.png",            
+            "Assets/Art/Export/Prefab/UI/TestPanel.prefab"
+        ],        
+        "includeGUIDs" : 
+        [
+            "b9249c6d475f62641b64c72a47577049"
+        ],        
+        "dependGUIDs" : 
+        [
+            "6203c31cc395b414b90eb8a88918cd08",            
+            "da9b9785de01a0b45a9ac34f2594bf22"
+        ],        
+        "sceneBundle" : false,        
+        "priority" : 0,        
+        "parent" : "",        
+        "children" : 
+        [
+            
+        ],        
+        "path" : "ui"
+    },    
+    
+    {
+        "name" : "sprites",        
+        "includs" : 
+        [
+            "Assets/Art/Export/Sprites"
+        ],        
+        "dependAssets" : 
+        [
+            "Assets/Art/Export/Sprites/Bg_btn_1.png",            
+            "Assets/Art/Export/Sprites/Bg_neikuang_1.png",            
+            "Assets/Art/Export/Sprites/Btn_nm_1.png",            
+            "Assets/Art/Export/Sprites/loading_1.png",            
+            "Assets/Art/Export/Sprites/LOGO_xiao.png",            
+            "Assets/Art/Export/Sprites/TT_xiao_1.png"
+        ],        
+        "includeGUIDs" : 
+        [
+            "d92bf720d3ece5e44a9be01c3ac376a4"
+        ],        
+        "dependGUIDs" : 
+        [
+            "3bb953093d3525642b228f7bd51056a5",            
+            "6203c31cc395b414b90eb8a88918cd08",            
+            "5b37fe964cd31ed4491aaca036bee23e",            
+            "7cb8696d9c4211249a7dfa0ee7773598",            
+            "e7b06a8a12f14e144bed7136bb7c11ee",            
+            "789d15d2bec886541933fb1a869ae718"
+        ],        
+        "sceneBundle" : false,        
+        "priority" : 0,        
+        "parent" : "",        
+        "children" : 
+        [
+            
+        ],        
+        "path" : "sprites"
+    }
+]
