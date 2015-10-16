@@ -1,5 +1,5 @@
-﻿using UnityEngine;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+using UnityEngine;
 
 public abstract class ClientTemplateDictionary<T> : ScriptableObject where T : TemplateVO
 {

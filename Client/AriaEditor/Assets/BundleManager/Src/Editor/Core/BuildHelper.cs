@@ -1,10 +1,9 @@
-using UnityEngine;
-using UnityEditor;
 using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using UnityEditor;
+using UnityEngine;
 
 /**
  * Build helper contains APIs for bundle building.
@@ -346,20 +345,13 @@ public class BuildHelper
                 Debug.LogError("Cannnot load [" + assetPath + "] as asset object");
             }
         }
-        //        //强制ui 用非DeterministicAssetBundle
-        //	    BuildAssetBundleOptions opt = CurrentBuildAssetOpts;
-        //	    if (outputPath.Contains("ui.bd") || outputPath.Contains("uishared.bd"))
-        //	    {
-        //            opt = (BMDataAccessor.BMConfiger.compress ? 0 : BuildAssetBundleOptions.UncompressedAssetBundle) 
-        //                | BuildAssetBundleOptions.CollectDependencies;
-        //	    }
 
         // Build bundle
 #if UNITY_4_2 || UNITY_4_1 || UNITY_4_0
 		bool succeed = BuildPipeline.BuildAssetBundle(	null, 
-		                                              	assets.ToArray(), 
+														assets.ToArray(), 
 														outputPath, 
-		                                              	CurrentBuildAssetOpts,
+														CurrentBuildAssetOpts,
 														BuildConfiger.UnityBuildTarget);
 #else
         bool succeed = BuildPipeline.BuildAssetBundle(null,

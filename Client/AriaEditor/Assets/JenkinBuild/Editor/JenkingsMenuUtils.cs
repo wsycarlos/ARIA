@@ -1,5 +1,4 @@
-﻿
-using UnityEditor;
+﻿using UnityEditor;
 
 namespace JenkinBuild
 {
@@ -24,6 +23,24 @@ namespace JenkinBuild
         public static void BuildAndroidBundlesEN()
         {
             JenkinsBundleBuildTools.BuildAndroidBundles(LocalizationType.en);
+        }
+
+        /// <summary>
+        /// 打包中文版IOSBundle
+        /// </summary>
+        [MenuItem("Jenkins/Bundle/IOS/CN")]
+        public static void BuildIOSBundlesCN()
+        {
+            JenkinsBundleBuildTools.BuildIOSBundles(LocalizationType.cn);
+        }
+
+        /// <summary>
+        /// 打包英文版IOSBundle
+        /// </summary>
+        [MenuItem("Jenkins/Bundle/IOS/EN")]
+        public static void BuildIOSBundlesEN()
+        {
+            JenkinsBundleBuildTools.BuildIOSBundles(LocalizationType.en);
         }
 
         /// <summary>

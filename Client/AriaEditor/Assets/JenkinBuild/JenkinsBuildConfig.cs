@@ -34,26 +34,32 @@ namespace JenkinBuild
             }
         }
 
-        public string language;
-        public string debug;
-        public string unityplatform;
-        public string sdkPlatform;
-        public string serverurl;
-        public string bundleIdentifier;
-        public string bundleversion;
-        public string bundleversioncode;
+        public string _language;
+        public string _debug;
+        public string _unityplatform;
+        public string _sdkPlatform;
+        public string _serverurl;
+        public string _bundleIdentifier;
+        public string _bundleversion;
+        public string _bundleversioncode;
 
-        public LocalizationType Language { get { return (LocalizationType)Enum.Parse(typeof(LocalizationType), language); } }
+        public string Bundleversion
+        {
+            get { return _bundleversion; }
+        }
 
-        public bool Debug { get { return Boolean.Parse(debug); } }
+        public LocalizationType Language { get { return (LocalizationType)Enum.Parse(typeof(LocalizationType), _language); } }
 
-        public BuildPlatform Unityplatform { get { return (BuildPlatform)Enum.Parse(typeof(BuildPlatform), unityplatform); } }
+        public bool Debug { get { return Boolean.Parse(_debug); } }
+
+        public BuildPlatform Unityplatform { get { return (BuildPlatform)Enum.Parse(typeof(BuildPlatform), _unityplatform); } }
 
 #if UNITY_EDITOR
         public void RefreshConfig(LocalizationType type, bool isDebug, BuildPlatform platform)
         {
             string isDebugStr = isDebug ? "_debug.xml" : "_release.xml";
-            string path = Application.dataPath + "/../../BuildSettings/jenkins_" + platform.ToString() + "_" + type.ToString() + isDebugStr;
+            //TODO Fix me
+            string path = Application.dataPath + "/../../Settings/BuildSettings/jenkins_" + platform.ToString() + "_" + type.ToString() + isDebugStr;
             RefreshConfig(path);
         }
 
@@ -67,14 +73,14 @@ namespace JenkinBuild
                 return;
             }
 
-            Instance.language = meta.RunConfig.language;
-            Instance.debug = meta.RunConfig.debug;
-            Instance.unityplatform = meta.RunConfig.unityplatform;
-            Instance.sdkPlatform = meta.RunConfig.sdkplatform;
-            Instance.serverurl = meta.RunConfig.serverurl;
-            Instance.bundleIdentifier = meta.RunConfig.bundleIdentifier;
-            Instance.bundleversion = meta.RunConfig.bundleversion;
-            Instance.bundleversioncode = meta.RunConfig.bundleversioncode;
+            Instance._language = meta.RunConfig.language;
+            Instance._debug = meta.RunConfig.debug;
+            Instance._unityplatform = meta.RunConfig.unityplatform;
+            Instance._sdkPlatform = meta.RunConfig.sdkplatform;
+            Instance._serverurl = meta.RunConfig.serverurl;
+            Instance._bundleIdentifier = meta.RunConfig.bundleIdentifier;
+            Instance._bundleversion = meta.RunConfig.bundleversion;
+            Instance._bundleversioncode = meta.RunConfig.bundleversioncode;
             UnityEditor.EditorUtility.SetDirty(_instance);
             UnityEditor.AssetDatabase.SaveAssets();
         }

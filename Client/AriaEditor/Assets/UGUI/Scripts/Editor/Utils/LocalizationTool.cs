@@ -44,7 +44,7 @@ public class LocalizationTool : EditorWindow
 
                 LanguageDictionary dict = GetAssetData<LanguageDictionary>(def.dataName, def.localizeType, path);
                 List<LanguageVO> dataList = LoadExcel(def.path, dict, def.offset, def.index);
-                Type type = Type.GetType("LocalizationDataWriter", true, true);
+                Type type = Type.GetType("Game.Template.Editor.LocalizationTemplateVODataWriter", true, true);
                 TemplateManager.Instance.WriteToFile(Activator.CreateInstance(type) as ITemplaterWriter, dataList, def.dataName + "_" + def.localizeType);
             }
         }

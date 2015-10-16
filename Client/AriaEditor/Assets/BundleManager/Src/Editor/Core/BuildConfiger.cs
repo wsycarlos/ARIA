@@ -1,8 +1,7 @@
-using UnityEngine;
-using UnityEditor;
-using System.Collections;
-using System.IO;
 using System.Text.RegularExpressions;
+using JenkinBuild;
+using UnityEditor;
+using UnityEngine;
 
 /**
  * Build settings
@@ -204,6 +203,12 @@ public class BuildConfiger
                 return Application.streamingAssetsPath;
             case "Platform":
                 return platform.ToString();
+            case "BundlePath":
+                return EditorConfig.Instance.BundlePath;
+            case "Localization":
+                return JenkinsBuildConfig.Instance.Language.ToString();
+            case "BundleVersion":
+                return JenkinsBuildConfig.Instance.Bundleversion;
             default:
                 Debug.LogError("Cannot solve enviroment var " + varString);
                 return "";

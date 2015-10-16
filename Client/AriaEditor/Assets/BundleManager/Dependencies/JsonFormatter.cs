@@ -1,5 +1,5 @@
-using System.Text;
 using System.Collections.Generic;
+using System.Text;
 
 public class JsonFormatter
 {
@@ -9,14 +9,14 @@ public class JsonFormatter
     const string Indent = Space + Space + Space + Space;
     static readonly string NewLine = "\n";
     #endregion
-	
+
     static bool inDoubleString = false;
     static bool inSingleString = false;
     static bool inVariableAssignment = false;
     static char prevChar = '\0';
 
     static Stack<JsonContextType> context = new Stack<JsonContextType>();
-	
+
     private enum JsonContextType
     {
         Object, Array
@@ -36,13 +36,13 @@ public class JsonFormatter
 
     public static string PrettyPrint(string input)
     {
-		// Clear all states
-	    inDoubleString = false;
-	    inSingleString = false;
-	    inVariableAssignment = false;
-	    prevChar = '\0';
-	    context.Clear();
-		
+        // Clear all states
+        inDoubleString = false;
+        inSingleString = false;
+        inVariableAssignment = false;
+        prevChar = '\0';
+        context.Clear();
+
         var output = new StringBuilder(input.Length * 2);
         char c;
 

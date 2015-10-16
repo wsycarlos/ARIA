@@ -1,0 +1,22 @@
+{
+    "downloadUrls" : 
+    {
+        "android" : "$(DataPath)/../AssetBundle/$(Platform)",        
+        "ios" : "$(DataPath)/../AssetBundle/$(Platform)",        
+        "pc" : "$(DataPath)/../AssetBundle/$(Platform)",        
+        "web" : "$(DataPath)/../AssetBundle/$(Platform)",        
+        "wp8" : "$(DataPath)/../AssetBundle/$(Platform)"
+    },    
+    "outputs" : 
+    {
+        "android" : "$(BundlePath)/$(Localization)/$(Platform)/$(BundleVersion)",        
+        "ios" : "$(BundlePath)/$(Localization)/$(Platform)/$(BundleVersion)",        
+        "pc" : "$(BundlePath)/$(Localization)/$(Platform)/$(BundleVersion)",        
+        "web" : "$(BundlePath)/$(Localization)/$(Platform)/$(BundleVersion)",        
+        "wp8" : "$(BundlePath)/$(Localization)/$(Platform)/$(BundleVersion)"
+    },    
+    "bundleTarget" : 0,    
+    "useEditorTarget" : true,    
+    "downloadFromOutput" : false,    
+    "offlineCache" : true
+}

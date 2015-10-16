@@ -1,5 +1,4 @@
-﻿
-namespace JenkinBuild
+﻿namespace JenkinBuild
 {
     /// <summary>
     /// 功能概述：

@@ -12,9 +12,9 @@ using System.Text;
 /// </exception>
 public class ByteArray
 {
-    private System.IO.MemoryStream buffer;
-    System.IO.BinaryReader br;
-    System.IO.BinaryWriter bw;
+    private MemoryStream buffer;
+    BinaryReader br;
+    BinaryWriter bw;
     private bool compressed = false;
     public byte[] Bytes
     {

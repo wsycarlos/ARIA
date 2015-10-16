@@ -1,6 +1,5 @@
 ﻿using UnityEngine;
-using System.Collections;
 
-public class BMSettingsInspectorObj : ScriptableObject 
+public class BMSettingsInspectorObj : ScriptableObject
 {
 }

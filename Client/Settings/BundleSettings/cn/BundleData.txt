@@ -1,0 +1,250 @@
+[
+    
+    {
+        "name" : "uishared",        
+        "includs" : 
+        [
+            "",            
+            "Assets/ZGame/AssetPackage/Export/Sprites"
+        ],        
+        "dependAssets" : 
+        [
+            "Assets/ZGame/AssetPackage/Export/Sprites/H_101.jpg",            
+            "Assets/ZGame/AssetPackage/Export/Sprites/loading_1.png"
+        ],        
+        "includeGUIDs" : 
+        [
+            "b9249c6d475f62641b64c72a47577049",            
+            "082331a2efdb86046b4d8c7b97895a18"
+        ],        
+        "dependGUIDs" : 
+        [
+            "9471447e59e0d0645a8a9c84d0e9f4d7",            
+            "410de4d359d26cf4b8b8662904b04252"
+        ],        
+        "sceneBundle" : false,        
+        "priority" : 0,        
+        "parent" : "",        
+        "children" : 
+        [
+            "ui"
+        ],        
+        "path" : "ui"
+    },    
+    
+    {
+        "name" : "sprites",        
+        "includs" : 
+        [
+            "",            
+            "Assets/ZGame/AssetPackage/Export/Prefab/Sprite"
+        ],        
+        "dependAssets" : 
+        [
+            "Assets/ZGame/AssetPackage/Export/Prefab/Sprite/Buff.prefab",            
+            "Assets/ZGame/AssetPackage/Export/Prefab/Sprite/DamageText.prefab",            
+            "Assets/ZGame/CorePackage/Script/DestroyByTime.cs",            
+            "Assets/ZGame/AssetPackage/Export/Prefab/Sprite/Eff_1250.prefab",            
+            "Assets/ZGame/AssetPackage/Export/Prefab/Sprite/Eff_1440.prefab",            
+            "Assets/ZGame/AssetPackage/Export/Prefab/Sprite/Eff_3201.prefab",            
+            "Assets/ZGame/AssetPackage/Export/Prefab/Sprite/Eff_3301.prefab",            
+            "Assets/ZGame/AssetPackage/Export/Prefab/Sprite/Eff_3302.prefab",            
+            "Assets/ZGame/AssetPackage/Export/Prefab/Sprite/Eff_3401.prefab",            
+            "Assets/ZGame/AssetPackage/Export/Prefab/Sprite/Eff_3402.prefab",            
+            "Assets/ZGame/AssetPackage/Export/Prefab/Sprite/Eff_3403.prefab",            
+            "Assets/ZGame/AssetPackage/Export/Prefab/Sprite/Eff_3408.prefab",            
+            "Assets/ZGame/AssetPackage/Export/Prefab/Sprite/Eff_attack.prefab",            
+            "Assets/ZGame/AssetPackage/Export/Prefab/Sprite/Eff_fire_hurt.prefab",            
+            "Assets/ZGame/AssetPackage/Export/Prefab/Sprite/Eff_hp_effect.prefab",            
+            "Assets/ZGame/AssetPackage/Export/Prefab/Sprite/Eff_hurt.prefab",            
+            "Assets/ZGame/AssetPackage/Export/Prefab/Sprite/Eff_ice_hurt.prefab",            
+            "Assets/ZGame/AssetPackage/Export/Prefab/Sprite/Eff_ignore_effect.prefab",            
+            "Assets/ZGame/AssetPackage/Export/Prefab/Sprite/Eff_immune_effect.prefab",            
+            "Assets/ZGame/AssetPackage/Export/Prefab/Sprite/Eff_light_hurt.prefab",            
+            "Assets/ZGame/AssetPackage/Export/Prefab/Sprite/Eff_morale_effect.prefab",            
+            "Assets/ZGame/AssetPackage/Export/Prefab/Sprite/HPText.prefab",            
+            "Assets/ZGame/AssetPackage/Export/Prefab/Sprite/ManaText.prefab",            
+            "Assets/ZGame/AssetPackage/Export/Prefab/Sprite/TipsText.prefab"
+        ],        
+        "includeGUIDs" : 
+        [
+            "d92bf720d3ece5e44a9be01c3ac376a4",            
+            "456544b5f840cfc4b84e181bf27c1450"
+        ],        
+        "dependGUIDs" : 
+        [
+            "2fab3a488d091d445924677007f1f024",            
+            "d0dad2286020fb04db14ff210f2fc560",            
+            "431d3e5b8bcf35843b526523df1f7090",            
+            "b6bf5c9a8c0bc0f4f826211c1103825b",            
+            "690dbe92be45f8d44813cacd150aea95",            
+            "12d7df17218137743b5e73a9f8ad06e5",            
+            "46cb70797c79fe540935be486976c539",            
+            "89eaec38c60e9c54ea9184da8d0e739f",            
+            "5f341ac703464bc44a2a7765dc81e4f1",            
+            "48159cbe6c68e9e498503cf866c8835b",            
+            "10d73e66883581646953fc5255bb6ef6",            
+            "a59d0570cfc7ca94ca59e08a1d15c43a",            
+            "7d7aeacc210412a469474bd01ba7ba80",            
+            "a1ebbd3974c5e2e428267440d630329e",            
+            "c1b046e6c662ae5458008dc72d2867cc",            
+            "394cd1d4bdb4c734aafdefca25ad15ee",            
+            "e59eff61894fc9546a3de517cb6b8f7c",            
+            "86d80c257c13c2748b6628bfcaf9fc82",            
+            "23c8f0ae151cc0a4c8e7ddc3e99ca281",            
+            "751defb9731a5f146a4c5efa855dd15c",            
+            "ea48f849bf88ee2429a06eb331456c6f",            
+            "ce1cf5aff7bf5ac408fbc552e6721b9a",            
+            "6ba054b6030e9ad43bbd01c9c0705ef3",            
+            "25aef4e0a7e641b49bca03ff29c94a09"
+        ],        
+        "sceneBundle" : false,        
+        "priority" : 0,        
+        "parent" : "",        
+        "children" : 
+        [
+            
+        ],        
+        "path" : "sprites"
+    },    
+    
+    {
+        "name" : "config",        
+        "includs" : 
+        [
+            "Assets/ZGame/AssetPackage/Export/Config"
+        ],        
+        "dependAssets" : 
+        [
+            "Assets/ZGame/AssetPackage/Export/Config/uiConfig.asset",            
+            "Assets/ZGame/CorePackage/Script/UI/Config/UIConfigDictionary.cs"
+        ],        
+        "includeGUIDs" : 
+        [
+            "9ab16283f40115847a4a6658568f2fae"
+        ],        
+        "dependGUIDs" : 
+        [
+            "04dbf26b1cb776e4cb3579772034eaee",            
+            "30adb7b68417a8d40846b88942de7f42"
+        ],        
+        "sceneBundle" : false,        
+        "priority" : 0,        
+        "parent" : "",        
+        "children" : 
+        [
+            
+        ],        
+        "path" : "config"
+    },    
+    
+    {
+        "name" : "template",        
+        "includs" : 
+        [
+            "Assets/ZGame/AssetPackage/Export/Template"
+        ],        
+        "dependAssets" : 
+        [
+            "Assets/ZGame/AssetPackage/Export/Template/BuildingLevelTemplateVOData.bytes",            
+            "Assets/ZGame/AssetPackage/Export/Template/BuildingProductTemplateVOData.bytes",            
+            "Assets/ZGame/AssetPackage/Export/Template/BuildingSettingTemplateVOData.bytes",            
+            "Assets/ZGame/AssetPackage/Export/Template/BuildingSpecialTemplateVOData.bytes",            
+            "Assets/ZGame/AssetPackage/Export/Template/BuildingTemplateVOData.bytes",            
+            "Assets/ZGame/AssetPackage/Export/Template/ConstantTemplateVOData.bytes",            
+            "Assets/ZGame/AssetPackage/Export/Template/HumanTemplateVOData.bytes",            
+            "Assets/ZGame/AssetPackage/Export/Template/LocalizationData_cn.bytes",            
+            "Assets/ZGame/AssetPackage/Export/Template/LocalizationData_en.bytes"
+        ],        
+        "includeGUIDs" : 
+        [
+            "48ddc1cd8b0aaad4d9ab874154bb9bfa"
+        ],        
+        "dependGUIDs" : 
+        [
+            "e8c619a8cc940924095cdcec5c460de0",            
+            "24e499dd1380e47439e79518fbee336b",            
+            "14380010ee0a6204e8c71f04c8734e8b",            
+            "af14a3d60d0766940bed36e863a4c4c6",            
+            "5633a7a0e47f0fe4586559aca4ab661f",            
+            "071a9838f93f5e24aaf74a90269d25fc",            
+            "7562d3cdaeaa6dd40ae4bf2aa8263c5f",            
+            "2d10d37ece0d0fd4493cc7f2fa745fa4",            
+            "68efcb898c68c6a4789553eccffa5fe5"
+        ],        
+        "sceneBundle" : false,        
+        "priority" : 0,        
+        "parent" : "",        
+        "children" : 
+        [
+            
+        ],        
+        "path" : "template"
+    },    
+    
+    {
+        "name" : "scripts",        
+        "includs" : 
+        [
+            "Assets/ZGame/AssetPackage/Export/CScript"
+        ],        
+        "dependAssets" : 
+        [
+            "Assets/ZGame/AssetPackage/Export/CScript/AriaExtends.dll.bytes",            
+            "Assets/ZGame/AssetPackage/Export/CScript/AriaExtends.pdb.bytes"
+        ],        
+        "includeGUIDs" : 
+        [
+            "17a417c31ad15a24ba2d6311bc4b8df1"
+        ],        
+        "dependGUIDs" : 
+        [
+            "b69ce8e8a57498b419a4a838fe6e41e5",            
+            "c2a9a226aa17f694a9ff80ecb019408e"
+        ],        
+        "sceneBundle" : false,        
+        "priority" : 0,        
+        "parent" : "",        
+        "children" : 
+        [
+            
+        ],        
+        "path" : "scripts"
+    },    
+    
+    {
+        "name" : "ui",        
+        "includs" : 
+        [
+            "Assets/ZGame/AssetPackage/Export/Prefab/UI"
+        ],        
+        "dependAssets" : 
+        [
+            "Assets/ZGame/AssetPackage/Export/Sprites/H_101.jpg",            
+            "Assets/ZGame/AssetPackage/Export/Sprites/loading_1.png",            
+            "Assets/UGUI/Scripts/Interation/Localize.cs",            
+            "Assets/ZGame/AssetPackage/Export/Prefab/UI/TestPanel.prefab",            
+            "Assets/ZGame/AssetPackage/Export/Prefab/UI/WAITING_PANEL.prefab"
+        ],        
+        "includeGUIDs" : 
+        [
+            "3645ca4e9a5b0d6479df04bf8bd14c70"
+        ],        
+        "dependGUIDs" : 
+        [
+            "9471447e59e0d0645a8a9c84d0e9f4d7",            
+            "410de4d359d26cf4b8b8662904b04252",            
+            "33ca53160c1521945b478323f4e251eb",            
+            "069d9abae9a4fae4fa1464ae99c7a6d0",            
+            "eee6697bda8fb06488a6c663fcab5e6f"
+        ],        
+        "sceneBundle" : false,        
+        "priority" : 0,        
+        "parent" : "uishared",        
+        "children" : 
+        [
+            
+        ],        
+        "path" : "ui"
+    }
+]

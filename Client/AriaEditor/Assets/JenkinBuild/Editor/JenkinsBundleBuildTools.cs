@@ -1,5 +1,4 @@
-﻿
-using Game.Template.Editor;
+﻿using Game.Template.Editor;
 using JenkinBuild;
 using UnityEditor;
 
@@ -22,6 +21,14 @@ public class JenkinsBundleBuildTools
         BuildBundles(BuildTarget.Android);
     }
 
+    public static void BuildIOSBundles(LocalizationType type)
+    {
+        //刷新配置文件
+        JenkinsUtils.RefreshConfig(type, true, BuildPlatform.ios);
+        //构建
+        BuildBundles(BuildTarget.iOS);
+    }
+
     public static void BuildPcBundles(LocalizationType type)
     {
         //刷新配置文件
@@ -39,11 +46,11 @@ public class JenkinsBundleBuildTools
         //导出模板配置
         TemplateLoadEditor.ImportTemplates();
         //刷新UI配置
-        //ReFreshUIConfig.RefreshUIConfig();
+        ReFreshUIConfig.RefreshUIConfig();
         //刷新BundleManager
-        //RefreshBundle();
+        RefreshBundle();
         //构建导出
-        //ExportBundleData();
+        ExportBundleData();
     }
 
     /// <summary>
@@ -61,7 +68,7 @@ public class JenkinsBundleBuildTools
     {
         if (BundleManager.RefreshBuildStateFromOutputPath())
         {
-            BuildHelper.BuildAll();
+            BuildHelper.RebuildAll();
             BuildHelper.ExportBMDatasToOutput();
         }
     }

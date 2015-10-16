@@ -11,7 +11,7 @@ using UnityEngine;
 public class ReFreshUIConfig
 {
     private static string _folderPath = Application.dataPath + "/ZGame/AssetPackage/Export/";
-    private static string[] _path = { "Prefab/:*prefab" };
+    private static string[] _path = { "Prefab/UI/:*prefab" };
     static List<UnityEngine.Object> _objects = new List<UnityEngine.Object>();
 
     public static void RefreshUIConfig()

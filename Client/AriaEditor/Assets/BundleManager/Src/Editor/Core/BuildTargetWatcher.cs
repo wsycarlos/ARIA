@@ -1,23 +1,22 @@
-﻿using UnityEngine;
-using UnityEditor;
+﻿using UnityEditor;
 
 
 [InitializeOnLoad]
 public class BuildTargetWatcher
 {
-	static BuildTargetWatcher()
-	{
-		OnBuildTargetChanged();
+    static BuildTargetWatcher()
+    {
+        OnBuildTargetChanged();
 
-		EditorUserBuildSettings.activeBuildTargetChanged += OnBuildTargetChanged;
-	}
+        EditorUserBuildSettings.activeBuildTargetChanged += OnBuildTargetChanged;
+    }
 
-	static void OnBuildTargetChanged()
-	{
-		if(BuildConfiger.UseEditorTarget)
-		{
-			BuildConfiger.UnityBuildTarget = EditorUserBuildSettings.activeBuildTarget;
-			BMDataAccessor.SaveUrls();
-		}
-	}
+    static void OnBuildTargetChanged()
+    {
+        if (BuildConfiger.UseEditorTarget)
+        {
+            BuildConfiger.UnityBuildTarget = EditorUserBuildSettings.activeBuildTarget;
+            BMDataAccessor.SaveUrls();
+        }
+    }
 }

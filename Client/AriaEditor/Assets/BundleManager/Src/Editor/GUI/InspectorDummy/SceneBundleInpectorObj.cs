@@ -1,6 +1,5 @@
 ﻿using UnityEngine;
-using System.Collections;
 
-public class SceneBundleInpectorObj : ScriptableObject 
+public class SceneBundleInpectorObj : ScriptableObject
 {
 }

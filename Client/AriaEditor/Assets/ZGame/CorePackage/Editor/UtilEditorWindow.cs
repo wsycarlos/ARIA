@@ -80,87 +80,98 @@ public class UtilEditorWindow : EditorWindow
     void ProjectSetting()
     {
         string myPath = "";
+        EditorConfig instance = EditorConfig.Instance;
         pathDic.Clear();
 
         GUILayout.Label("-------------项目目录设定---------------", EditorStyles.largeLabel);
         GUILayout.Space(5f);
 
-        EditorConfig.Instance.MainPath = DrawEditorConfigProperty("MainPath", EditorConfig.Instance.MainPath);
-        if (EditorConfig.Instance.MainPath != "")
+        instance.MainPath = DrawEditorConfigProperty("MainPath", instance.MainPath);
+        if (instance.MainPath != "")
         {
-            pathDic.Add("MainPath", EditorConfig.Instance.MainPath);
-            if (CheckIsMyPath(EditorConfig.Instance.MainPath))
-                myPath = EditorConfig.Instance.MainPath;
+            pathDic.Add("MainPath", instance.MainPath);
+            if (CheckIsMyPath(instance.MainPath))
+                myPath = instance.MainPath;
         }
 
         GUILayout.Space(5f);
 
-        EditorConfig.Instance.BundlePath = DrawEditorConfigProperty("BundlePath", EditorConfig.Instance.BundlePath);
-        if (EditorConfig.Instance.BundlePath != "")
+        instance.BundlePath = DrawEditorConfigProperty("BundlePath", instance.BundlePath);
+        if (instance.BundlePath != "")
         {
-            pathDic.Add("BundlePath", EditorConfig.Instance.BundlePath);
-            if (CheckIsMyPath(EditorConfig.Instance.BundlePath))
-                myPath = EditorConfig.Instance.BundlePath;
+            pathDic.Add("BundlePath", instance.BundlePath);
+            if (CheckIsMyPath(instance.BundlePath))
+                myPath = instance.BundlePath;
         }
 
         GUILayout.Space(5f);
 
-        EditorConfig.Instance.EditorPath = DrawEditorConfigProperty("Editor", EditorConfig.Instance.EditorPath);
-        if (EditorConfig.Instance.EditorPath != "")
+        instance.EditorPath = DrawEditorConfigProperty("Editor", instance.EditorPath);
+        if (instance.EditorPath != "")
         {
-            pathDic.Add("Editor", EditorConfig.Instance.EditorPath);
-            if (CheckIsMyPath(EditorConfig.Instance.EditorPath))
-                myPath = EditorConfig.Instance.EditorPath;
+            pathDic.Add("Editor", instance.EditorPath);
+            if (CheckIsMyPath(instance.EditorPath))
+                myPath = instance.EditorPath;
         }
 
         GUILayout.Space(5f);
 
-        EditorConfig.Instance.ExcelPath = DrawEditorConfigProperty("ExcelPath", EditorConfig.Instance.ExcelPath);
-        if (EditorConfig.Instance.ExcelPath != "")
+        instance.ExcelPath = DrawEditorConfigProperty("ExcelPath", instance.ExcelPath);
+        if (instance.ExcelPath != "")
         {
-            pathDic.Add("ExcelPath", EditorConfig.Instance.ExcelPath);
-            if (CheckIsMyPath(EditorConfig.Instance.ExcelPath))
-                myPath = EditorConfig.Instance.ExcelPath;
+            pathDic.Add("ExcelPath", instance.ExcelPath);
+            if (CheckIsMyPath(instance.ExcelPath))
+                myPath = instance.ExcelPath;
         }
 
         GUILayout.Space(5f);
 
-        EditorConfig.Instance.BuidlSettingsPath = DrawEditorConfigProperty("BuidlSettingsPath", EditorConfig.Instance.BuidlSettingsPath);
-        if (EditorConfig.Instance.BuidlSettingsPath != "")
+        instance.BuidlSettingsPath = DrawEditorConfigProperty("BuidlSettingsPath", instance.BuidlSettingsPath);
+        if (instance.BuidlSettingsPath != "")
         {
-            pathDic.Add("BuidlSettingsPath", EditorConfig.Instance.BuidlSettingsPath);
-            if (CheckIsMyPath(EditorConfig.Instance.BuidlSettingsPath))
-                myPath = EditorConfig.Instance.BuidlSettingsPath;
+            pathDic.Add("BuidlSettingsPath", instance.BuidlSettingsPath);
+            if (CheckIsMyPath(instance.BuidlSettingsPath))
+                myPath = instance.BuidlSettingsPath;
         }
 
         GUILayout.Space(5f);
 
-        EditorConfig.Instance.CodeGenarateWritePath = DrawEditorConfigProperty("CodeGenarateWritePath", EditorConfig.Instance.CodeGenarateWritePath);
-        if (EditorConfig.Instance.BuidlSettingsPath != "")
+        instance.CodeGenarateWritePath = DrawEditorConfigProperty("CodeGenarateWritePath", instance.CodeGenarateWritePath);
+        if (instance.BuidlSettingsPath != "")
         {
-            pathDic.Add("CodeGenarateWritePath", EditorConfig.Instance.CodeGenarateWritePath);
-            if (CheckIsMyPath(EditorConfig.Instance.CodeGenarateWritePath))
-                myPath = EditorConfig.Instance.CodeGenarateWritePath;
+            pathDic.Add("CodeGenarateWritePath", instance.CodeGenarateWritePath);
+            if (CheckIsMyPath(instance.CodeGenarateWritePath))
+                myPath = instance.CodeGenarateWritePath;
         }
 
         GUILayout.Space(5f);
 
-        EditorConfig.Instance.CodeGenarateReaderPath = DrawEditorConfigProperty("CodeGenarateReaderPath", EditorConfig.Instance.CodeGenarateReaderPath);
-        if (EditorConfig.Instance.CodeGenarateReaderPath != "")
+        instance.CodeGenarateReaderPath = DrawEditorConfigProperty("CodeGenarateReaderPath", instance.CodeGenarateReaderPath);
+        if (instance.CodeGenarateReaderPath != "")
         {
-            pathDic.Add("CodeGenarateReaderPath", EditorConfig.Instance.CodeGenarateReaderPath);
-            if (CheckIsMyPath(EditorConfig.Instance.CodeGenarateReaderPath))
-                myPath = EditorConfig.Instance.CodeGenarateReaderPath;
+            pathDic.Add("CodeGenarateReaderPath", instance.CodeGenarateReaderPath);
+            if (CheckIsMyPath(instance.CodeGenarateReaderPath))
+                myPath = instance.CodeGenarateReaderPath;
         }
 
         GUILayout.Space(5f);
 
-        EditorConfig.Instance.CodeGenarateDataDicPath = DrawEditorConfigProperty("CodeGenarateDataDicPath", EditorConfig.Instance.CodeGenarateDataDicPath);
-        if (EditorConfig.Instance.CodeGenarateDataDicPath != "")
+        instance.CodeGenarateDataDicPath = DrawEditorConfigProperty("CodeGenarateDataDicPath", instance.CodeGenarateDataDicPath);
+        if (instance.CodeGenarateDataDicPath != "")
         {
-            pathDic.Add("CodeGenarateDataDicPath", EditorConfig.Instance.CodeGenarateDataDicPath);
-            if (CheckIsMyPath(EditorConfig.Instance.CodeGenarateDataDicPath))
-                myPath = EditorConfig.Instance.CodeGenarateDataDicPath;
+            pathDic.Add("CodeGenarateDataDicPath", instance.CodeGenarateDataDicPath);
+            if (CheckIsMyPath(instance.CodeGenarateDataDicPath))
+                myPath = instance.CodeGenarateDataDicPath;
+        }
+
+        GUILayout.Space(5f);
+
+        instance.BundleConfigPath = DrawEditorConfigProperty("BundleConfigPath", instance.BundleConfigPath);
+        if (instance.BundleConfigPath != "")
+        {
+            pathDic.Add("BundleConfigPath", instance.BundleConfigPath);
+            if (CheckIsMyPath(instance.BundleConfigPath))
+                myPath = instance.BundleConfigPath;
         }
     }
 }

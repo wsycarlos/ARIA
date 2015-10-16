@@ -1,0 +1,112 @@
+[
+    
+    {
+        "bundleName" : "uishared",        
+        "version" : 9,        
+        "crc" : 1822728282,        
+        "size" : 11724,        
+        "changeTime" : -8587566264094078195,        
+        "lastBuildDependencies" : 
+        [
+            "Assets/ZGame/AssetPackage/Export/Sprites/loading_1.png",            
+            "Assets/ZGame/AssetPackage/Export/Sprites/H_101.jpg"
+        ]
+    },    
+    
+    {
+        "bundleName" : "sprites",        
+        "version" : 12,        
+        "crc" : 4236651833,        
+        "size" : 6008,        
+        "changeTime" : -8587566265909121942,        
+        "lastBuildDependencies" : 
+        [
+            "Assets/ZGame/AssetPackage/Export/Prefab/Sprite/Eff_3408.prefab",            
+            "Assets/ZGame/AssetPackage/Export/Prefab/Sprite/TipsText.prefab",            
+            "Assets/ZGame/AssetPackage/Export/Prefab/Sprite/Eff_ice_hurt.prefab",            
+            "Assets/ZGame/AssetPackage/Export/Prefab/Sprite/Eff_1440.prefab",            
+            "Assets/ZGame/AssetPackage/Export/Prefab/Sprite/Eff_hurt.prefab",            
+            "Assets/ZGame/AssetPackage/Export/Prefab/Sprite/Eff_ignore_effect.prefab",            
+            "Assets/ZGame/AssetPackage/Export/Prefab/Sprite/Eff_3403.prefab",            
+            "Assets/ZGame/AssetPackage/Export/Prefab/Sprite/ManaText.prefab",            
+            "Assets/ZGame/AssetPackage/Export/Prefab/Sprite/Eff_hp_effect.prefab",            
+            "Assets/ZGame/AssetPackage/Export/Prefab/Sprite/Eff_3201.prefab",            
+            "Assets/ZGame/AssetPackage/Export/Prefab/Sprite/Eff_3401.prefab",            
+            "Assets/ZGame/AssetPackage/Export/Prefab/Sprite/DamageText.prefab",            
+            "Assets/ZGame/AssetPackage/Export/Prefab/Sprite/Eff_3302.prefab",            
+            "Assets/ZGame/AssetPackage/Export/Prefab/Sprite/Buff.prefab",            
+            "Assets/ZGame/AssetPackage/Export/Prefab/Sprite/Eff_fire_hurt.prefab",            
+            "Assets/ZGame/AssetPackage/Export/Prefab/Sprite/Eff_morale_effect.prefab",            
+            "Assets/ZGame/AssetPackage/Export/Prefab/Sprite/Eff_3301.prefab",            
+            "Assets/ZGame/AssetPackage/Export/Prefab/Sprite/Eff_light_hurt.prefab",            
+            "Assets/ZGame/AssetPackage/Export/Prefab/Sprite/Eff_1250.prefab",            
+            "Assets/ZGame/CorePackage/Script/DestroyByTime.cs",            
+            "Assets/ZGame/AssetPackage/Export/Prefab/Sprite/Eff_attack.prefab",            
+            "Assets/ZGame/AssetPackage/Export/Prefab/Sprite/Eff_immune_effect.prefab",            
+            "Assets/ZGame/AssetPackage/Export/Prefab/Sprite/Eff_3402.prefab",            
+            "Assets/ZGame/AssetPackage/Export/Prefab/Sprite/HPText.prefab"
+        ]
+    },    
+    
+    {
+        "bundleName" : "config",        
+        "version" : 2,        
+        "crc" : 743941028,        
+        "size" : 1221,        
+        "changeTime" : -8587566266221607898,        
+        "lastBuildDependencies" : 
+        [
+            "Assets/ZGame/CorePackage/Script/UI/Config/UIConfigDictionary.cs",            
+            "Assets/ZGame/AssetPackage/Export/Config/uiConfig.asset"
+        ]
+    },    
+    
+    {
+        "bundleName" : "ui",        
+        "version" : 2,        
+        "crc" : 2152457232,        
+        "size" : 6795,        
+        "changeTime" : -8587566264030102193,        
+        "lastBuildDependencies" : 
+        [
+            "Assets/ZGame/AssetPackage/Export/Sprites/loading_1.png",            
+            "Assets/UGUI/Scripts/Interation/Localize.cs",            
+            "Assets/ZGame/AssetPackage/Export/Prefab/UI/TestPanel.prefab",            
+            "Assets/ZGame/AssetPackage/Export/Prefab/UI/WAITING_PANEL.prefab",            
+            "Assets/ZGame/AssetPackage/Export/Sprites/H_101.jpg"
+        ]
+    },    
+    
+    {
+        "bundleName" : "template",        
+        "version" : 2,        
+        "crc" : 1701840062,        
+        "size" : 52330,        
+        "changeTime" : -8587566263636130730,        
+        "lastBuildDependencies" : 
+        [
+            "Assets/ZGame/AssetPackage/Export/Template/BuildingSettingTemplateVOData.bytes",            
+            "Assets/ZGame/AssetPackage/Export/Template/BuildingTemplateVOData.bytes",            
+            "Assets/ZGame/AssetPackage/Export/Template/BuildingSpecialTemplateVOData.bytes",            
+            "Assets/ZGame/AssetPackage/Export/Template/ConstantTemplateVOData.bytes",            
+            "Assets/ZGame/AssetPackage/Export/Template/BuildingLevelTemplateVOData.bytes",            
+            "Assets/ZGame/AssetPackage/Export/Template/LocalizationData_en.bytes",            
+            "Assets/ZGame/AssetPackage/Export/Template/HumanTemplateVOData.bytes",            
+            "Assets/ZGame/AssetPackage/Export/Template/BuildingProductTemplateVOData.bytes",            
+            "Assets/ZGame/AssetPackage/Export/Template/LocalizationData_cn.bytes"
+        ]
+    },    
+    
+    {
+        "bundleName" : "scripts",        
+        "version" : 2,        
+        "crc" : 2594250166,        
+        "size" : 12179,        
+        "changeTime" : -8587566263515136917,        
+        "lastBuildDependencies" : 
+        [
+            "Assets/ZGame/AssetPackage/Export/CScript/AriaExtends.pdb.bytes",            
+            "Assets/ZGame/AssetPackage/Export/CScript/AriaExtends.dll.bytes"
+        ]
+    }
+]
