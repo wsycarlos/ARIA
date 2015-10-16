@@ -11,13 +11,9 @@ namespace Game.Template.Editor
     /// </summary>
     public class TemplateCodeGenerator
     {
-        private static string _writerPath = "/ZGame/CorePackage/Script/Editor/Template/Writer/";
-        private static string _readerPath = "/../../AriaExtends/AriaExtends/Game/Template/";
-        private static string _dictPth = "/../../AriaExtends/AriaExtends/Game/Template/Dictionary/";
-
         public static void WriteCodeGenerator(List<FiledPropObject> list, string realName, string pre, string TemplateVOType)
         {
-            string filename = Application.dataPath + _writerPath + realName;
+            string filename = EditorConfig.Instance.CodeGenarateWritePath + realName;
             ClassGenerator generator = new ClassGenerator("Game.Template.Editor", realName);
             generator.AddBaseType("ITemplaterWriter");
             generator.AddImport("System.Collections.Generic");
@@ -92,7 +88,7 @@ namespace Game.Template.Editor
 
         public static void ReadCodeGenerator(List<FiledPropObject> list, string realName, string pre, string TemplateVOType)
         {
-            string filename = Application.dataPath + _readerPath + pre + "/" + realName;
+            string filename = EditorConfig.Instance.CodeGenarateReaderPath + pre + "/" + realName;
             ClassGenerator generator = new ClassGenerator("Game.Template", realName);
             generator.AddBaseType("ITemplateReader");
             //generator.AddImport("System.Collections.Generic");
@@ -164,7 +160,7 @@ namespace Game.Template.Editor
 
         public static void DictionaryGenerator(string realName, Type type, Type subType, Type dataType)
         {
-            string filename = Application.dataPath + _dictPth + realName;
+            string filename = EditorConfig.Instance.CodeGenarateDataDicPath + realName;
             ClassGenerator generator = new ClassGenerator("Game.Template", realName + "Dictionary");
             generator.AddBaseType("ITemplateDictionary");
             generator.AddImport("UnityEngine");

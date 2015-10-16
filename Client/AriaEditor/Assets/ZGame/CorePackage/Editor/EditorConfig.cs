@@ -29,4 +29,8 @@ public class EditorConfig : ScriptableObject
     public string EditorPath;
     public string ExcelPath;
     public string BuidlSettingsPath;
+
+    public string CodeGenarateWritePath;
+    public string CodeGenarateReaderPath;
+    public string CodeGenarateDataDicPath;
 }

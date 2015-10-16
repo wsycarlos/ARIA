@@ -9,7 +9,7 @@ using UnityEngine;
 using vietlabs;
 
 
-public class TemplateLoadEditor : EditorWindow
+public class TemplateLoadEditor
 {
     private static string assetPath = "Assets/ZGame/AssetPackage/Template/";
 
