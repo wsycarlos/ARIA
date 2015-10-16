@@ -27,7 +27,7 @@ namespace JenkinBuild
         }
 
         /// <summary>
-        /// 打包中文版AndroidBundle
+        /// 打包中文版PCBundle
         /// </summary>
         [MenuItem("Jenkins/Bundle/PC/CN")]
         public static void BuildPcBundlesCN()
@@ -36,12 +36,18 @@ namespace JenkinBuild
         }
 
         /// <summary>
-        /// 打包英文版AndroidBundle
+        /// 打包英文版PCBundle
         /// </summary>
         [MenuItem("Jenkins/Bundle/PC/EN")]
         public static void BuildPcBundlesEN()
         {
             JenkinsBundleBuildTools.BuildPcBundles(LocalizationType.en);
+        }
+
+        [MenuItem("Jenkins/CodeGenetator", false, 0)]
+        public static void GenerateCode()
+        {
+            JenkinsBundleBuildTools.CodeGenerator();
         }
     }
 }

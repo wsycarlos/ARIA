@@ -12,8 +12,8 @@ namespace Game.Template.Editor
     public class TemplateCodeGenerator
     {
         private static string _writerPath = "/ZGame/CorePackage/Script/Editor/Template/Writer/";
-        private static string _readerPath = "/../../Template/";
-        private static string _dictPth = "/../../Dictionary/";
+        private static string _readerPath = "/../../AriaExtends/AriaExtends/Game/Template/";
+        private static string _dictPth = "/../../AriaExtends/AriaExtends/Game/Template/Dictionary/";
 
         public static void WriteCodeGenerator(List<FiledPropObject> list, string realName, string pre, string TemplateVOType)
         {

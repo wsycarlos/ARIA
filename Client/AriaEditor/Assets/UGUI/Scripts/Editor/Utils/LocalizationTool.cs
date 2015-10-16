@@ -7,6 +7,7 @@ using System.Reflection;
 using System.Text;
 using Excel;
 using Game;
+using Game.Template.Editor;
 using UnityEditor;
 using UnityEngine;
 
@@ -42,7 +43,9 @@ public class LocalizationTool : EditorWindow
                 }
 
                 LanguageDictionary dict = GetAssetData<LanguageDictionary>(def.dataName, def.localizeType, path);
-                LoadExcel(def.path, dict, def.offset, def.index);
+                List<LanguageVO> dataList = LoadExcel(def.path, dict, def.offset, def.index);
+                Type type = Type.GetType("LocalizationDataWriter", true, true);
+                TemplateManager.Instance.WriteToFile(Activator.CreateInstance(type) as ITemplaterWriter, dataList, def.dataName + "_" + def.localizeType);
             }
         }
     }
@@ -61,7 +64,7 @@ public class LocalizationTool : EditorWindow
         return assetData;
     }
 
-    public static void LoadExcel(string xlsName, LanguageDictionary templateDic, int defaultOffset, int SheetIndex = 0)
+    public static List<LanguageVO> LoadExcel(string xlsName, LanguageDictionary templateDic, int defaultOffset, int SheetIndex = 0)
     {
         string filename = EditorConfig.Instance.ExcelPath + "/" + xlsName;
 
@@ -74,7 +77,7 @@ public class LocalizationTool : EditorWindow
         if (!System.IO.File.Exists(filename))
         {
             EditorUtility.DisplayDialog("Error", "file invalid", "ok");
-            return;
+            throw new Exception("filename " + filename + " not exist");
         }
         System.IO.FileStream fs = new System.IO.FileStream(filename, System.IO.FileMode.Open, System.IO.FileAccess.Read);
         IExcelDataReader excel = ExcelReaderFactory.CreateBinaryReader(fs);
@@ -87,7 +90,7 @@ public class LocalizationTool : EditorWindow
 
         if (templateDic.itemList == null)
         {
-            templateDic.itemList = new System.Collections.Generic.List<LanguageVO>();
+            templateDic.itemList = new List<LanguageVO>();
         }
 
         templateDic.itemList.Clear();
@@ -117,6 +120,8 @@ public class LocalizationTool : EditorWindow
         EditorUtility.SetDirty(templateDic);
         AssetDatabase.SaveAssets();
         EditorUtility.ClearProgressBar();
+
+        return templateDic.itemList;
     }
 
     private static T GetVOFromDataRow<T>(DataRow row, int defaultOffset) where T : LanguageVO, new()

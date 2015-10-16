@@ -68,16 +68,24 @@ namespace Game.Template.Editor
                 if (attrs.Length > 0)
                 {
                     TemplateDefAttribute def = attrs[0] as TemplateDefAttribute;
-                    //read and write class
-                    CodeGenerator(def.dataType, def.dataName);
-                    //data dictionary class
-                    CodeGenerator(def.dataName, def.DataLTypeistType, def.dataType, def.dataDicType);
+                    try
+                    {
+                        //生成读写模板的代码类
+                        CodeGenerator(def.dataType, def.dataName);
+                        //生成缓存模板的字典类
+                        CodeGenerator(def.dataName, def.DataLTypeistType, def.dataType, def.dataDicType);
+                    }
+                    catch (Exception e)
+                    {
+                        Debug.LogError(e.Message);
+                        throw;
+                    }
+
                 };
             }
-            ////CodeGenerator("LocalizationData", typeof(List<LanguageVO>), typeof(LanguageVO), typeof(Dictionary<int, LanguageVO>));
         }
 
-        private void CodeGenerator(System.Type type, string dataName)
+        private void CodeGenerator(Type type, string dataName)
         {
             list = AutoFindProp(type);
 
@@ -91,7 +99,7 @@ namespace Game.Template.Editor
         }
 
         static string TemplateVOType = null;
-        private static List<FiledPropObject> AutoFindProp(System.Type obj)
+        private static List<FiledPropObject> AutoFindProp(Type obj)
         {
             TemplateVOType = obj.Name;
             List<FiledPropObject> list = new List<FiledPropObject>();

@@ -256,6 +256,7 @@
     <Compile Include="Assets\PrefabEvolution\Sources\Editor\PropertyExposure\PEPropertyHelper.cs" />
     <Compile Include="Assets\PrefabEvolution\Sources\Editor\PropertyExposure\PEPropertyPickerWindow.cs" />
     <Compile Include="Assets\PrefabEvolution\Sources\Editor\Tree\PETreeNode.cs" />
+    <Compile Include="Assets\UGUI\Scripts\Editor\Localization\LocalizationDataWriter.cs" />
     <Compile Include="Assets\UGUI\Scripts\Editor\Localization\LocalizationInspector.cs" />
     <Compile Include="Assets\UGUI\Scripts\Editor\UIEditorTools.cs" />
     <Compile Include="Assets\UGUI\Scripts\Editor\UISettings.cs" />

@@ -9,6 +9,11 @@ using UnityEditor;
 /// </summary>
 public class JenkinsBundleBuildTools
 {
+    public static void CodeGenerator()
+    {
+        TemplateManager.Instance.CodeGenerator();
+    }
+
     public static void BuildAndroidBundles(LocalizationType type)
     {
         //刷新配置文件
@@ -31,10 +36,8 @@ public class JenkinsBundleBuildTools
         EditorUserBuildSettings.SwitchActiveBuildTarget(target);
         //导出多语言配置
         LanguageTool.Export();
-
-        TemplateManager.Instance.CodeGenerator();
         //导出模板配置
-        //TemplateLoadEditor.ImportTemplates();
+        TemplateLoadEditor.ImportTemplates();
         //刷新UI配置
         //ReFreshUIConfig.RefreshUIConfig();
         //刷新BundleManager
