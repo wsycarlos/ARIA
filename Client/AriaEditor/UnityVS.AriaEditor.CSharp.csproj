@@ -13,13 +13,11 @@
     <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <TargetFrameworkProfile>Unity Subset v3.5</TargetFrameworkProfile>
-    <CompilerResponseFile>
-    </CompilerResponseFile>
+    <CompilerResponseFile></CompilerResponseFile>
     <UnityProjectType>Game:1</UnityProjectType>
     <UnityBuildTarget>StandaloneWindows:5</UnityBuildTarget>
     <UnityVersion>5.1.3f1</UnityVersion>
-    <RootNamespace>
-    </RootNamespace>
+    <RootNamespace></RootNamespace>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -269,8 +267,6 @@
     <Compile Include="Assets\UGUI\Scripts\Interation\PageScrollRect.cs" />
     <Compile Include="Assets\UGUI\Scripts\Interation\RotateObject.cs" />
     <Compile Include="Assets\UGUI\Scripts\Interation\ScrollText.cs" />
-    <Compile Include="Assets\ZGame\CorePackage\Script\Template\VO\LanguageDictionary.cs" />
-    <Compile Include="Assets\ZGame\CorePackage\Script\Template\VO\LanguageVO.cs" />
     <Compile Include="Assets\UGUI\Scripts\Localization\LocalizationDefAttribute.cs" />
     <Compile Include="Assets\UGUI\Scripts\Localization\LocalizationType.cs" />
     <Compile Include="Assets\UGUI\Utils\UGUIAddItemTools.cs" />
@@ -289,12 +285,6 @@
     <Compile Include="Assets\ZGame\CorePackage\Script\Template\TemplateIndexAttribute.cs" />
     <Compile Include="Assets\ZGame\CorePackage\Script\Template\TemplateType.cs" />
     <Compile Include="Assets\ZGame\CorePackage\Script\Template\TemplateVO.cs" />
-    <Compile Include="Assets\ZGame\CorePackage\Script\Template\VO\ActorTemplateVO.cs" />
-    <Compile Include="Assets\ZGame\CorePackage\Script\Template\VO\ActorTemplateVODictionary.cs" />
-    <Compile Include="Assets\ZGame\CorePackage\Script\Template\VO\BattleLogTemplateVO.cs" />
-    <Compile Include="Assets\ZGame\CorePackage\Script\Template\VO\BattleLogTemplateVODictionary.cs" />
-    <Compile Include="Assets\ZGame\CorePackage\Script\Template\VO\BornTemplateVO.cs" />
-    <Compile Include="Assets\ZGame\CorePackage\Script\Template\VO\BornTemplateVODictionary.cs" />
     <Compile Include="Assets\ZGame\CorePackage\Script\Template\VO\BuildingLevelTemplateVO.cs" />
     <Compile Include="Assets\ZGame\CorePackage\Script\Template\VO\BuildingLevelTemplateVODictionary.cs" />
     <Compile Include="Assets\ZGame\CorePackage\Script\Template\VO\BuildingProductTemplateVO.cs" />
@@ -305,54 +295,11 @@
     <Compile Include="Assets\ZGame\CorePackage\Script\Template\VO\BuildingSpecialTemplateVODictionary.cs" />
     <Compile Include="Assets\ZGame\CorePackage\Script\Template\VO\BuildingTemplateVO.cs" />
     <Compile Include="Assets\ZGame\CorePackage\Script\Template\VO\BuildingTemplateVODictionary.cs" />
-    <Compile Include="Assets\ZGame\CorePackage\Script\Template\VO\ChargeTemplateVO.cs" />
-    <Compile Include="Assets\ZGame\CorePackage\Script\Template\VO\ChargeTemplateVODictionary.cs" />
-    <Compile Include="Assets\ZGame\CorePackage\Script\Template\VO\ClubTipsTemplateVO.cs" />
-    <Compile Include="Assets\ZGame\CorePackage\Script\Template\VO\ClubTipsTemplateVODictionary.cs" />
     <Compile Include="Assets\ZGame\CorePackage\Script\Template\VO\ConstantTemplateVO.cs" />
     <Compile Include="Assets\ZGame\CorePackage\Script\Template\VO\ConstantTemplateVODictionary.cs" />
-    <Compile Include="Assets\ZGame\CorePackage\Script\Template\VO\DropTemplateVO.cs" />
-    <Compile Include="Assets\ZGame\CorePackage\Script\Template\VO\DropTemplateVODictionary.cs" />
-    <Compile Include="Assets\ZGame\CorePackage\Script\Template\VO\EquipSuitTemplateVO.cs" />
-    <Compile Include="Assets\ZGame\CorePackage\Script\Template\VO\EquipSuitTemplateVODictionary.cs" />
-    <Compile Include="Assets\ZGame\CorePackage\Script\Template\VO\EquipTemplateVO.cs" />
-    <Compile Include="Assets\ZGame\CorePackage\Script\Template\VO\EquipTemplateVODictionary.cs" />
-    <Compile Include="Assets\ZGame\CorePackage\Script\Template\VO\FinishCdTimeTemplateVO.cs" />
-    <Compile Include="Assets\ZGame\CorePackage\Script\Template\VO\FinishCdTimeTemplateVODictionary.cs" />
-    <Compile Include="Assets\ZGame\CorePackage\Script\Template\VO\GuideTemplateVO.cs" />
-    <Compile Include="Assets\ZGame\CorePackage\Script\Template\VO\GuideTemplateVODictionary.cs" />
-    <Compile Include="Assets\ZGame\CorePackage\Script\Template\VO\HelpTemplateVO.cs" />
-    <Compile Include="Assets\ZGame\CorePackage\Script\Template\VO\HelpTemplateVODictionary.cs" />
-    <Compile Include="Assets\ZGame\CorePackage\Script\Template\VO\HeroTemplateVO.cs" />
-    <Compile Include="Assets\ZGame\CorePackage\Script\Template\VO\HeroTemplateVODictionary.cs" />
     <Compile Include="Assets\ZGame\CorePackage\Script\Template\VO\HumanTemplateVO.cs" />
-    <Compile Include="Assets\ZGame\CorePackage\Script\Template\VO\HumanTemplateVODictionary.cs" />
-    <Compile Include="Assets\ZGame\CorePackage\Script\Template\VO\MapBlackMarketTemplateVO.cs" />
-    <Compile Include="Assets\ZGame\CorePackage\Script\Template\VO\MapBlackMarketTemplateVODictionary.cs" />
-    <Compile Include="Assets\ZGame\CorePackage\Script\Template\VO\MapCampTemplateVO.cs" />
-    <Compile Include="Assets\ZGame\CorePackage\Script\Template\VO\MapCampTemplateVODictionary.cs" />
-    <Compile Include="Assets\ZGame\CorePackage\Script\Template\VO\MapDragonTemplateVO.cs" />
-    <Compile Include="Assets\ZGame\CorePackage\Script\Template\VO\MapDragonTemplateVODictionary.cs" />
-    <Compile Include="Assets\ZGame\CorePackage\Script\Template\VO\MapMineTemplateVO.cs" />
-    <Compile Include="Assets\ZGame\CorePackage\Script\Template\VO\MapMineTemplateVODictionary.cs" />
-    <Compile Include="Assets\ZGame\CorePackage\Script\Template\VO\MapMonsterTemplateVO.cs" />
-    <Compile Include="Assets\ZGame\CorePackage\Script\Template\VO\MapMonsterTemplateVODictionary.cs" />
-    <Compile Include="Assets\ZGame\CorePackage\Script\Template\VO\MapSettingTemplateVO.cs" />
-    <Compile Include="Assets\ZGame\CorePackage\Script\Template\VO\MapSettingTemplateVODictionary.cs" />
-    <Compile Include="Assets\ZGame\CorePackage\Script\Template\VO\MapTemplateVO.cs" />
-    <Compile Include="Assets\ZGame\CorePackage\Script\Template\VO\MapTemplateVODictionary.cs" />
-    <Compile Include="Assets\ZGame\CorePackage\Script\Template\VO\MarketTemplateVO.cs" />
-    <Compile Include="Assets\ZGame\CorePackage\Script\Template\VO\MarketTemplateVODictionary.cs" />
-    <Compile Include="Assets\ZGame\CorePackage\Script\Template\VO\OfficerTemplateVO.cs" />
-    <Compile Include="Assets\ZGame\CorePackage\Script\Template\VO\OfficerTemplateVODictionary.cs" />
-    <Compile Include="Assets\ZGame\CorePackage\Script\Template\VO\SocietyActionTemplateVO.cs" />
-    <Compile Include="Assets\ZGame\CorePackage\Script\Template\VO\SocietyActionTemplateVODictionary.cs" />
-    <Compile Include="Assets\ZGame\CorePackage\Script\Template\VO\SocietyLevelTemplateVO.cs" />
-    <Compile Include="Assets\ZGame\CorePackage\Script\Template\VO\SocietyLevelTemplateVODictionary.cs" />
-    <Compile Include="Assets\ZGame\CorePackage\Script\Template\VO\SocietyLivenessTemplateVO.cs" />
-    <Compile Include="Assets\ZGame\CorePackage\Script\Template\VO\SocietyLivenessTemplateVODictionary.cs" />
-    <Compile Include="Assets\ZGame\CorePackage\Script\Template\VO\TalentTemplateVO.cs" />
-    <Compile Include="Assets\ZGame\CorePackage\Script\Template\VO\TalentTemplateVODictionary.cs" />
+    <Compile Include="Assets\ZGame\CorePackage\Script\Template\VO\LanguageDictionary.cs" />
+    <Compile Include="Assets\ZGame\CorePackage\Script\Template\VO\LanguageVO.cs" />
     <Compile Include="Assets\ZGame\CorePackage\Script\UI\Config\Base\AttributeUtil.cs" />
     <Compile Include="Assets\ZGame\CorePackage\Script\UI\Config\Base\GameObjectConfig.cs" />
     <Compile Include="Assets\ZGame\CorePackage\Script\UI\Config\Base\GameObjectConfigDictionary.cs" />
