@@ -18,4 +18,6 @@ public enum TemplateType
     BuildingProductTemplateVODictionary,
     [TemplateDef("building", 4, "BuildingSettingTemplateVOData", typeof(BuildingSettingTemplateVO), typeof(List<BuildingSettingTemplateVO>), typeof(Dictionary<int, BuildingSettingTemplateVO>))]
     BuildingSettingTemplateVODictionary,
+    //[TemplateDef("localization", 0, "LocalizationTemplateVOData", typeof(LanguageVO), typeof(List<LanguageVO>), typeof(Dictionary<int, LanguageVO>))]
+    //LanguageDictionary,
 }

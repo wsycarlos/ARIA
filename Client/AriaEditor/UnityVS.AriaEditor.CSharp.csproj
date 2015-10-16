@@ -269,8 +269,8 @@
     <Compile Include="Assets\UGUI\Scripts\Interation\PageScrollRect.cs" />
     <Compile Include="Assets\UGUI\Scripts\Interation\RotateObject.cs" />
     <Compile Include="Assets\UGUI\Scripts\Interation\ScrollText.cs" />
-    <Compile Include="Assets\UGUI\Scripts\Localization\LanguageDictionary.cs" />
-    <Compile Include="Assets\UGUI\Scripts\Localization\LanguageVO.cs" />
+    <Compile Include="Assets\ZGame\CorePackage\Script\Template\VO\LanguageDictionary.cs" />
+    <Compile Include="Assets\ZGame\CorePackage\Script\Template\VO\LanguageVO.cs" />
     <Compile Include="Assets\UGUI\Scripts\Localization\LocalizationDefAttribute.cs" />
     <Compile Include="Assets\UGUI\Scripts\Localization\LocalizationType.cs" />
     <Compile Include="Assets\UGUI\Utils\UGUIAddItemTools.cs" />

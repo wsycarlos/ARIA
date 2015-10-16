@@ -83,6 +83,8 @@ namespace Game.Template.Editor
 
                 };
             }
+
+            AssetDatabase.Refresh();
         }
 
         private void CodeGenerator(Type type, string dataName)
