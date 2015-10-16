@@ -2,9 +2,9 @@
     
     {
         "bundleName" : "uishared",        
-        "version" : 17,        
-        "crc" : 430624465,        
-        "size" : 11922,        
+        "version" : 15,        
+        "crc" : 1822728282,        
+        "size" : 11724,        
         "changeTime" : -8587566264094078195,        
         "lastBuildDependencies" : 
         [
@@ -15,9 +15,9 @@
     
     {
         "bundleName" : "sprites",        
-        "version" : 20,        
-        "crc" : 130095178,        
-        "size" : 6011,        
+        "version" : 18,        
+        "crc" : 4236651833,        
+        "size" : 6008,        
         "changeTime" : -8587566265909121942,        
         "lastBuildDependencies" : 
         [
@@ -50,8 +50,8 @@
     
     {
         "bundleName" : "config",        
-        "version" : 13,        
-        "crc" : 295644927,        
+        "version" : 9,        
+        "crc" : 2240401177,        
         "size" : 1221,        
         "changeTime" : -8587566266221607898,        
         "lastBuildDependencies" : 
@@ -63,8 +63,8 @@
     
     {
         "bundleName" : "ui",        
-        "version" : 10,        
-        "crc" : 2436727142,        
+        "version" : 8,        
+        "crc" : 2152457232,        
         "size" : 6795,        
         "changeTime" : -8587566264030102193,        
         "lastBuildDependencies" : 
@@ -79,8 +79,8 @@
     
     {
         "bundleName" : "template",        
-        "version" : 12,        
-        "crc" : 204410069,        
+        "version" : 9,        
+        "crc" : 2367425663,        
         "size" : 52330,        
         "changeTime" : -8587566263636130730,        
         "lastBuildDependencies" : 
@@ -99,8 +99,8 @@
     
     {
         "bundleName" : "scripts",        
-        "version" : 10,        
-        "crc" : 2475226162,        
+        "version" : 8,        
+        "crc" : 2594250166,        
         "size" : 12179,        
         "changeTime" : -8587566263515136917,        
         "lastBuildDependencies" : 

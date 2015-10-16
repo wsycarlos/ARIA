@@ -138,8 +138,10 @@ public class BuildConfiger
                     return BuildTarget.iOS;
                 case BuildPlatform.android:
                     return BuildTarget.Android;
-                case BuildPlatform.webGL:
+                case BuildPlatform.webgl:
                     return BuildTarget.WebGL;
+                case BuildPlatform.wp8:
+                    return BuildTarget.WP8Player;
                 default:
                     Debug.LogError("Internal error. Cannot find BuildTarget for " + BundleBuildTarget);
                     return BuildTarget.StandaloneWindows;
@@ -169,7 +171,10 @@ public class BuildConfiger
                     BundleBuildTarget = BuildPlatform.android;
                     break;
                 case BuildTarget.WebGL:
-                    BundleBuildTarget = BuildPlatform.webGL;
+                    BundleBuildTarget = BuildPlatform.webgl;
+                    break;
+                case BuildTarget.WP8Player:
+                    BundleBuildTarget = BuildPlatform.wp8;
                     break;
                 default:
                     Debug.LogError("Internal error. Bundle Manager dosn't support for platform " + value);

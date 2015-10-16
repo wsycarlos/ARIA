@@ -152,10 +152,6 @@ internal class BMDataAccessor
     static private BMConfiger m_BMConfier = null;
     static private BMUrls m_Urls = null;
 
-    //public const string BundleDataPath = "Assets/BundleManager/BundleData.txt";
-    //public const string BMConfigerPath = "Assets/BundleManager/BMConfiger.txt";
-    //public const string BundleBuildStatePath = "Assets/BundleManager/BuildStates.txt";
-    //public const string UrlDataPath = "Assets/BundleManager/Resources/Urls.txt";
     public static List<BundleBuildState> BuildStatesFromOutputPath
     {
         get

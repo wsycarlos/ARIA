@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<config>
+  <RunConfig
+	debug="true"
+	language="cn"
+	unityplatform="webgl"
+	sdkplatform="Self"
+	bundleIdentifier="com.limbostudio.aria"
+	bundleversion="1.0.0"
+	bundleversioncode="1"
+	serverurl="http://192.168.1.103/aria/settings.xml"/>
+</config>

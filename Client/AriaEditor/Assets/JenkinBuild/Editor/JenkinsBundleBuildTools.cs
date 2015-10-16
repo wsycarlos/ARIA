@@ -37,6 +37,24 @@ public class JenkinsBundleBuildTools
         BuildBundles(BuildTarget.StandaloneWindows);
     }
 
+    public static void BuildWebBundle(LocalizationType type)
+    {
+        JenkinsUtils.RefreshConfig(type, true, BuildPlatform.web);
+        BuildBundles(BuildTarget.WebPlayer);
+    }
+
+    public static void BuildWPBundle(LocalizationType type)
+    {
+        JenkinsUtils.RefreshConfig(type, true, BuildPlatform.wp8);
+        BuildBundles(BuildTarget.WP8Player);
+    }
+
+    public static void BuildWebGLBundle(LocalizationType type)
+    {
+        JenkinsUtils.RefreshConfig(type, true, BuildPlatform.webgl);
+        BuildBundles(BuildTarget.WebGL);
+    }
+
     private static void BuildBundles(BuildTarget target)
     {
         //切换平台
@@ -68,7 +86,7 @@ public class JenkinsBundleBuildTools
     {
         if (BundleManager.RefreshBuildStateFromOutputPath())
         {
-            BuildHelper.RebuildAll();
+            BuildHelper.BuildAll();
             BuildHelper.ExportBMDatasToOutput();
         }
     }

@@ -92,7 +92,8 @@ public class BMUrls
 			{"pc", ""},
 			{"ios", ""},
 			{"android", ""},
-			{"wp8", ""}
+			{"wp8", ""},
+            {"webgl",""}
 		};
         outputs = new Dictionary<string, string>()
 		{
@@ -100,7 +101,8 @@ public class BMUrls
 			{"pc", ""},
 			{"ios", ""},
 			{"android", ""},
-			{"wp8", ""}
+			{"wp8", ""},
+             {"webgl",""}
 		};
     }
 
@@ -128,5 +130,5 @@ public enum BuildPlatform
     android,
     web,
     wp8,
-    webGL,
+    webgl,
 }

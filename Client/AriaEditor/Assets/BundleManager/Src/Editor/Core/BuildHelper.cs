@@ -20,13 +20,13 @@ public class BuildHelper
         if (!Directory.Exists(exportPath))
             Directory.CreateDirectory(exportPath);
 
-        uint crc = 0;
-        if (!BuildAssetBundle(new string[] { BMDataAccessor.BundleDataPath, BMDataAccessor.BundleBuildStatePath, BMDataAccessor.BMConfigerPath }, Path.Combine(exportPath, "BM.data"), out crc))
-            Debug.LogError("Failed to build bundle of config files.");
+        //uint crc = 0;
+        //if (!BuildAssetBundle(new string[] { BMDataAccessor.BundleDataPath, BMDataAccessor.BundleBuildStatePath, BMDataAccessor.BMConfigerPath }, Path.Combine(exportPath, "BM.data"), out crc))
+        //    Debug.LogError("Failed to build bundle of config files.");
 
         BuildHelper.ExportBundleDataFileToOutput();
         BuildHelper.ExportBundleBuildDataFileToOutput();
-        BuildHelper.ExportBMConfigerFileToOutput();
+        //BuildHelper.ExportBMConfigerFileToOutput();
     }
 
     /**

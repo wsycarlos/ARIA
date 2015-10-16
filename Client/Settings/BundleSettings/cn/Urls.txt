@@ -5,17 +5,19 @@
         "ios" : "$(DataPath)/../AssetBundle/$(Platform)",        
         "pc" : "$(DataPath)/../AssetBundle/$(Platform)",        
         "web" : "$(DataPath)/../AssetBundle/$(Platform)",        
-        "wp8" : "$(DataPath)/../AssetBundle/$(Platform)"
+        "wp8" : "$(DataPath)/../AssetBundle/$(Platform)",        
+        "webgl" : "$(DataPath)/../AssetBundle/$(Platform)"
     },    
     "outputs" : 
     {
         "android" : "$(BundlePath)/$(Localization)/$(Platform)/$(BundleVersion)",        
         "ios" : "$(BundlePath)/$(Localization)/$(Platform)/$(BundleVersion)",        
         "pc" : "$(BundlePath)/$(Localization)/$(Platform)/$(BundleVersion)",        
-        "web" : "$(DataPath)/../AssetBundle/$(Platform)",        
-        "wp8" : "$(DataPath)/../AssetBundle/$(Platform)"
+        "web" : "$(BundlePath)/$(Localization)/$(Platform)/$(BundleVersion)",        
+        "wp8" : "$(BundlePath)/$(Localization)/$(Platform)/$(BundleVersion)",        
+        "webgl" : "$(BundlePath)/$(Localization)/$(Platform)/$(BundleVersion)"
     },    
-    "bundleTarget" : 1,    
+    "bundleTarget" : 5,    
     "useEditorTarget" : true,    
     "downloadFromOutput" : false,    
     "offlineCache" : true

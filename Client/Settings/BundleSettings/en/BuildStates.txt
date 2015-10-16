@@ -2,9 +2,9 @@
     
     {
         "bundleName" : "uishared",        
-        "version" : 9,        
-        "crc" : 1822728282,        
-        "size" : 11724,        
+        "version" : 10,        
+        "crc" : 2217584974,        
+        "size" : 11921,        
         "changeTime" : -8587566264094078195,        
         "lastBuildDependencies" : 
         [
@@ -15,9 +15,9 @@
     
     {
         "bundleName" : "sprites",        
-        "version" : 12,        
-        "crc" : 4236651833,        
-        "size" : 6008,        
+        "version" : 13,        
+        "crc" : 1213846056,        
+        "size" : 6010,        
         "changeTime" : -8587566265909121942,        
         "lastBuildDependencies" : 
         [
@@ -50,8 +50,8 @@
     
     {
         "bundleName" : "config",        
-        "version" : 2,        
-        "crc" : 743941028,        
+        "version" : 5,        
+        "crc" : 2240401177,        
         "size" : 1221,        
         "changeTime" : -8587566266221607898,        
         "lastBuildDependencies" : 
@@ -63,9 +63,9 @@
     
     {
         "bundleName" : "ui",        
-        "version" : 2,        
-        "crc" : 2152457232,        
-        "size" : 6795,        
+        "version" : 3,        
+        "crc" : 3666250819,        
+        "size" : 6797,        
         "changeTime" : -8587566264030102193,        
         "lastBuildDependencies" : 
         [
@@ -79,8 +79,8 @@
     
     {
         "bundleName" : "template",        
-        "version" : 2,        
-        "crc" : 1701840062,        
+        "version" : 5,        
+        "crc" : 2367425663,        
         "size" : 52330,        
         "changeTime" : -8587566263636130730,        
         "lastBuildDependencies" : 
@@ -99,9 +99,9 @@
     
     {
         "bundleName" : "scripts",        
-        "version" : 2,        
-        "crc" : 2594250166,        
-        "size" : 12179,        
+        "version" : 3,        
+        "crc" : 1521200454,        
+        "size" : 12164,        
         "changeTime" : -8587566263515136917,        
         "lastBuildDependencies" : 
         [

@@ -109,6 +109,36 @@
     },    
     
     {
+        "name" : "config",        
+        "includs" : 
+        [
+            "Assets/ZGame/AssetPackage/Export/Config"
+        ],        
+        "dependAssets" : 
+        [
+            "Assets/ZGame/AssetPackage/Export/Config/uiConfig.asset",            
+            "Assets/ZGame/CorePackage/Script/UI/Config/UIConfigDictionary.cs"
+        ],        
+        "includeGUIDs" : 
+        [
+            "9ab16283f40115847a4a6658568f2fae"
+        ],        
+        "dependGUIDs" : 
+        [
+            "04dbf26b1cb776e4cb3579772034eaee",            
+            "30adb7b68417a8d40846b88942de7f42"
+        ],        
+        "sceneBundle" : false,        
+        "priority" : 0,        
+        "parent" : "",        
+        "children" : 
+        [
+            
+        ],        
+        "path" : "config"
+    },    
+    
+    {
         "name" : "template",        
         "includs" : 
         [
@@ -180,36 +210,6 @@
             
         ],        
         "path" : "scripts"
-    },    
-    
-    {
-        "name" : "config",        
-        "includs" : 
-        [
-            "Assets/ZGame/AssetPackage/Export/Config"
-        ],        
-        "dependAssets" : 
-        [
-            "Assets/ZGame/AssetPackage/Export/Config/uiConfig.asset",            
-            "Assets/ZGame/CorePackage/Script/UI/Config/UIConfigDictionary.cs"
-        ],        
-        "includeGUIDs" : 
-        [
-            "9ab16283f40115847a4a6658568f2fae"
-        ],        
-        "dependGUIDs" : 
-        [
-            "04dbf26b1cb776e4cb3579772034eaee",            
-            "30adb7b68417a8d40846b88942de7f42"
-        ],        
-        "sceneBundle" : false,        
-        "priority" : 0,        
-        "parent" : "",        
-        "children" : 
-        [
-            
-        ],        
-        "path" : "config"
     },    
     
     {

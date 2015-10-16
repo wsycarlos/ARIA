@@ -56,7 +56,21 @@ namespace JenkinBuild
 
         public static JenkinsConfigMeta ReadConfig(string fileName)
         {
-            return (JenkinsConfigMeta)DeserializeFromString(File.ReadAllText(fileName), typeof(JenkinsConfigMeta));
+
+            string xmlStream = null;
+#if UNITY_WEBPLAYER
+            FileStream stream = File.OpenRead(fileName);
+            byte[] byData = new byte[(int)stream.Length];
+            stream.Seek(0, SeekOrigin.Begin);
+            char[] charData = new Char[(int)stream.Length];
+            stream.Read(byData, 0, (int)stream.Length);
+            Decoder d = Encoding.UTF8.GetDecoder();
+            d.GetChars(byData, 0, byData.Length, charData, 0);
+            xmlStream = new string(charData);
+#else
+            xmlStream = File.ReadAllText(fileName);
+#endif
+            return (JenkinsConfigMeta)DeserializeFromString(xmlStream, typeof(JenkinsConfigMeta));
         }
     }
 }
