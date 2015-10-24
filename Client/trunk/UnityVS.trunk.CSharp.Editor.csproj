@@ -108,12 +108,6 @@
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
       <HintPath>Library\UnityAssemblies\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
     </Reference>
-    <Reference Include="ICSharpCode.SharpZipLib">
-      <HintPath>Assets\Excelreader\Lib\ICSharpCode.SharpZipLib.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Data">
-      <HintPath>Assets\Excelreader\Lib\System.Data.dll</HintPath>
-    </Reference>
     <Reference Include="WebSocket4Net">
       <HintPath>Assets\Plugin\WebSocket4Net.dll</HintPath>
     </Reference>
@@ -134,28 +128,6 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\BundleManager\Src\Editor\Core\BMDataAccessor.cs" />
-    <Compile Include="Assets\BundleManager\Src\Editor\Core\BMDataWatcher.cs" />
-    <Compile Include="Assets\BundleManager\Src\Editor\Core\BuildConfiger.cs" />
-    <Compile Include="Assets\BundleManager\Src\Editor\Core\BuildHelper.cs" />
-    <Compile Include="Assets\BundleManager\Src\Editor\Core\BuildTargetWatcher.cs" />
-    <Compile Include="Assets\BundleManager\Src\Editor\Core\BundleManager.cs" />
-    <Compile Include="Assets\BundleManager\Src\Editor\Core\DownloadConfiger.cs" />
-    <Compile Include="Assets\BundleManager\Src\Editor\GUI\BMGUIStyles.cs" />
-    <Compile Include="Assets\BundleManager\Src\Editor\GUI\BMSettingsEditor.cs" />
-    <Compile Include="Assets\BundleManager\Src\Editor\GUI\BundleEditorDrawer.cs" />
-    <Compile Include="Assets\BundleManager\Src\Editor\GUI\BundleTreeWin.cs" />
-    <Compile Include="Assets\BundleManager\Src\Editor\GUI\GUIDragHandler.cs" />
-    <Compile Include="Assets\BundleManager\Src\Editor\GUI\GUIStyleSet.cs" />
-    <Compile Include="Assets\BundleManager\Src\Editor\GUI\InspectorDummy\AssetBundleEditor.cs" />
-    <Compile Include="Assets\BundleManager\Src\Editor\GUI\InspectorDummy\AssetBundleInspectorObj.cs" />
-    <Compile Include="Assets\BundleManager\Src\Editor\GUI\InspectorDummy\BMSettingsInspectorObj.cs" />
-    <Compile Include="Assets\BundleManager\Src\Editor\GUI\InspectorDummy\SceneBundleEditor.cs" />
-    <Compile Include="Assets\BundleManager\Src\Editor\GUI\InspectorDummy\SceneBundleInpectorObj.cs" />
-    <Compile Include="Assets\JenkinBuild\Editor\JenkingsMenuUtils.cs" />
-    <Compile Include="Assets\JenkinBuild\Editor\JenkinsBundleBuildTools.cs" />
-    <Compile Include="Assets\JenkinBuild\Editor\JenkinsUtils.cs" />
-    <Compile Include="Assets\JenkinBuild\Editor\JenkinsVersionBuildTools.cs" />
     <Compile Include="Assets\NGUI\Examples\Scripts\InventorySystem\Editor\InvDatabaseInspector.cs" />
     <Compile Include="Assets\NGUI\Examples\Scripts\InventorySystem\Editor\InvFindItem.cs" />
     <Compile Include="Assets\NGUI\Scripts\Editor\ActiveAnimationEditor.cs" />
@@ -241,9 +213,6 @@
     <Compile Include="Assets\NGUI\Scripts\Editor\UIWidgetContainerEditor.cs" />
     <Compile Include="Assets\NGUI\Scripts\Editor\UIWidgetInspector.cs" />
     <Compile Include="Assets\NGUI\Scripts\Editor\UIWrapContentEditor.cs" />
-    <Compile Include="Assets\UGUI\Scripts\Editor\Localization\LocalizationInspector.cs" />
-    <Compile Include="Assets\UGUI\Scripts\Editor\UIEditorTools.cs" />
-    <Compile Include="Assets\UGUI\Scripts\Editor\UISettings.cs" />
     <Compile Include="Assets\VietLabs\Hierarchy2\Editor\Core\Editor\vlbEditor.cs" />
     <Compile Include="Assets\VietLabs\Hierarchy2\Editor\Core\Editor\vlbEditorSkin.cs" />
     <Compile Include="Assets\VietLabs\Hierarchy2\Editor\Core\Editor\vlbEditorType.cs" />
@@ -264,15 +233,8 @@
     <Compile Include="Assets\VietLabs\Hierarchy2\Editor\Core\vlbTexture.cs" />
     <Compile Include="Assets\VietLabs\Hierarchy2\Editor\Core\vlbType.cs" />
     <Compile Include="Assets\VietLabs\Hierarchy2\Editor\Hierarchy2.cs" />
-    <Compile Include="Assets\ZGame\Editor\EditorConfig.cs" />
-    <Compile Include="Assets\ZGame\Editor\UtilEditorWindow.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\BundleManager\BMConfiger.txt" />
-    <None Include="Assets\BundleManager\BuildStates.txt" />
-    <None Include="Assets\BundleManager\BundleData.txt" />
-    <None Include="Assets\BundleManager\Resources\Urls.txt" />
-    <None Include="Assets\LSharp\readme.txt" />
     <None Include="Assets\NGUI\Examples\Atlases\Fantasy\Fantasy Font - Normal.txt" />
     <None Include="Assets\NGUI\Examples\Atlases\Refractive\Refractive Font - Header.txt" />
     <None Include="Assets\NGUI\Examples\Atlases\Refractive\Refractive Font - Normal.txt" />
@@ -314,8 +276,6 @@
     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Packed 2.shader" />
     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Packed 3.shader" />
     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Packed.shader" />
-    <None Include="Assets\UGUI\Shader\GrayShader1.shader" />
-    <None Include="Assets\UGUI\Shader\GrayShader2.shader" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2013\UnityVS.CSharp.targets" />
 </Project>

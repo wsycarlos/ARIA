@@ -199,12 +199,10 @@ namespace Thrift.Transport
             }
             catch (IOException iox)
             {
-                Messenger.Broadcast(TTransportException.ThriftExceptionType.IOException.ToString());
                 throw new TTransportException(TTransportException.ExceptionType.Unknown, iox.ToString());
             }
             catch (WebException wx)
             {
-                Messenger.Broadcast(TTransportException.ThriftExceptionType.WebException.ToString());
                 throw new TTransportException(TTransportException.ExceptionType.Unknown, "Couldn't connect to server: " + wx);
             }
         }
