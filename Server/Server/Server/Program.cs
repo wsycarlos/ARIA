@@ -13,28 +13,22 @@ namespace Server
 
         static void Main(string[] args)
         {
-            Dictionary<string, Player> PlayerList = new Dictionary<string, Player>();
+            WebSocketServer appServer = new WebSocketServer();
 
-            List<Player> Player__List = new List<Player>();
+            string ip = args[0];
+            int port = int.Parse(args[1]);
 
-            var appServer = new WebSocketServer();
-
-            //服务器IP地址
-                string ip = args[0];
-                int port = int.Parse(args[1]);
-
-            //Setup the appServer
-            if (!appServer.Setup(ip,port)) //Setup with listening port
+            if (!appServer.Setup(ip, port))
             {
                 Console.WriteLine("Failed to setup!");
                 return;
             }
 
-            appServer.NewSessionConnected += new SessionHandler<WebSocketSession>(appServer_NewClientConnected);
+            appServer.NewSessionConnected += appServer_NewSessionConnected;
 
-            appServer.NewMessageReceived += new SessionHandler<WebSocketSession, string>(appServer_NewMessageReceived);
+            appServer.NewDataReceived += appServer_NewDataReceived;
 
-            appServer.SessionClosed += new SessionHandler<WebSocketSession, CloseReason>(appServer_SessionClosed);
+            appServer.SessionClosed += appServer_SessionClosed;
 
             //Try to start the appServer
             if (!appServer.Start())
@@ -43,28 +37,21 @@ namespace Server
                 return;
             }
 
-            Console.WriteLine("服务器启动成功, 按 'q' 退出服务器!");
+            Console.WriteLine("Press Q to Stop Server");
 
             while (Console.ReadKey().KeyChar != 'q')
             {
                 continue;
             }
 
-            //Stop the appServer
             appServer.Stop();
 
-            Console.WriteLine("The server was stopped!");
+            Console.WriteLine("The Server was Stopped!");
         }
 
-
-
-        static void appServer_NewClientConnected(WebSocketSession session)
+        static void appServer_NewSessionConnected(WebSocketSession session)
         {
             session.Send("第一次给客户端发信息Unity3DServer: ");
-
-            Player ps = new Player(session.SessionID);
-
-            session.Send(MakeDataToString.PlayerString(ps));
 
             Console.WriteLine("客户端 :端口" + session.RemoteEndPoint.Port + "连接到服务器了!");
 
@@ -76,13 +63,11 @@ namespace Server
             }
         }
 
-
-
-        static void appServer_NewMessageReceived(WebSocketSession session, string message)
+        static void appServer_NewDataReceived(WebSocketSession session, byte[] value)
         {
             session.Send("欢迎登陆本系统LinMengUnity3DServer: ");
 
-            Console.WriteLine("有客户端消息" + message);
+            Console.WriteLine("有客户端消息");
 
             Console.WriteLine("客户端数目" + ClientNum.ToString());
             foreach (var ses in session.AppServer.GetAllSessions())
@@ -100,57 +85,6 @@ namespace Server
             Console.WriteLine("客户端数目" + ClientNum.ToString());
         }
 
-        public class Player
-        {
-            public string sessionID { get; set; }
 
-            public string Name { get; set; }
-
-            public float X { get; set; }
-            public float Y { get; set; }
-            public float Z { get; set; }
-
-            public Player(string id)
-            {
-                this.sessionID = id;
-                Name = sessionID.Substring(0, 6);
-                X = -0.66666F;
-                Y = 1.59666F;
-                Z = 0;
-            }
-        }
-
-        public class MakeDataToString
-        {
-            public static string PlayerString(Player p)
-            {
-                return IDstr(p) + Namestr(p) + Xstr(p) + Ystr(p) + Zstr(p);
-            }
-
-            public static string IDstr(Player p)
-            {
-                return "<id>" + p.sessionID + "</id>";
-            }
-
-            public static string Namestr(Player p)
-            {
-                return "<name>" + p.Name + "</name>";
-            }
-
-            public static string Xstr(Player p)
-            {
-                return "<X>" + p.X + "</X>";
-            }
-
-            public static string Ystr(Player p)
-            {
-                return "<Y>" + p.Y + "</Y>";
-            }
-
-            public static string Zstr(Player p)
-            {
-                return "<Z>" + p.Z + "</Z>";
-            }
-        }
     }
 }
